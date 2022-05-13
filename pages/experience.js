@@ -4,9 +4,18 @@ export default function Experience() {
   return (
     <>
       <Navbar />
-      <div>
-        <h1 className="m-2 text-xl text-white">Experience</h1>
-      </div>
+      <section>
+        <h1 className="m-2 text-xl text-white">Web Development</h1>
+      </section>
+      <section>
+        <h1 className="m-2 text-xl text-white">Robtoics Engineer</h1>
+      </section>
+      <section>
+        <h1 className="m-2 text-xl text-white">Swimming</h1>
+      </section>
+      <section>
+        <h1 className="m-2 text-xl text-white">Leadership</h1>
+      </section>
     </>
   );
 }
