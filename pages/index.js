@@ -1,42 +1,48 @@
 import Navbar from "../components/Nav";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div className="grid h-screen place-items-center">
         <div>
-          <div className="inline-block m-8">
-            <h1 className="text-3xl font-bold text-slate-200">
-              Hi, I&apos;m Vincent
+          <div className="inline-block mr-12 align-top">
+            <h1 className="text-3xl font-bold text-slate-100">
+              Hi, I&apos;m Vincent👋
             </h1>
-            <h2 className="text-slate-300">
-              Student, Swimmer, Web Developer and Engineer
+            <h2 className="mt-2 text-xl text-slate-200">
+              Swimmer, Web Developer and Robotics Engineer
             </h2>
-            <p className="text-slate-400">
-              Building Web Apps 💻 and Robots 🤖 while juggling with school
+            <p className="mt-6 text-xl duration-300 text-slate-400 hover:translate-x-2">
+              <Link href="/projects">
+                <a>My Experiences →</a>
+              </Link>
+            </p>
+            <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
+              <Link href="/projects">
+                <a>Read My Blog →</a>
+              </Link>
+            </p>
+            <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
+              <Link href="/projects">
+                <a>My Projects →</a>
+              </Link>
+            </p>
+            <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
+              <Link href="/contact">
+                <a>Contact Me →</a>
+              </Link>
             </p>
           </div>
-          <div className="inline-block">
+          <div className="inline-block align-top">
             <Image
               src="https://avatars.githubusercontent.com/u/57314503?v=4"
-              width={160}
-              height={160}
+              width={240}
+              height={240}
               alt="pfp"
-              className="rounded-full"
+              className="rounded-2xl"
             ></Image>
-          </div>
-        </div>
-        <div className="mt-10">
-          <h1 className="text-xl font-bold text-slate-200">Highlights</h1>
-          <div className="flex text-slate-200">
-            <div className="p-2 m-2 border-2 rounded-xl">
-              <p>Secetary of Hwa Chong Robotics</p>
-            </div>
-            <div className="p-2 m-2 border-2 rounded-xl">
-              <p>Swimming NSG 5th Place 50 Breastroke</p>
-            </div>
           </div>
         </div>
       </div>
