@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div>
-        <h1 className="m-2 text-xl text-white">Hello world</h1>
+      <div className="flex justify-evenly">
+        <h1 className="m-2 mx-auto text-xl text-white">Hello world</h1>
       </div>
     </>
   );

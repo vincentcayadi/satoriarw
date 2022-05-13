@@ -6,8 +6,10 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="w-1/2 p-2 mx-auto mt-10 border-2 rounded-xl">
-        insert the img here
+      <div className="grid h-screen place-items-center">
+        <div className="p-2 mx-auto mt-10 text-center border-2 rounded-xl bg-slate-500">
+          insert the img here
+        </div>
       </div>
     </>
   );
