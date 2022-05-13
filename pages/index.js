@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className="grid h-screen place-items-center">
-        <div className="">
+        <div>
           <div className="inline-block m-8">
             <h1 className="text-3xl font-bold text-slate-200">
               Hi, I&apos;m Vincent
