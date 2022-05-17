@@ -22,21 +22,6 @@ export default function Experience() {
           </h1>
           <RoboCard />
         </div>
-        <div className="m-4">
-          <h1 className="text-xl text-white underline underline-offset-2">
-            Swimming
-          </h1>
-          <p className="mt-4 text-white"> Swimmer is my part time job</p>
-          <p className="mb-4 text-white">
-            I have been swimming for about more than 5 years now and I&apos;m
-            still Swimming 🏊
-          </p>
-        </div>
-        <div className="m-4 ">
-          <h1 className="text-xl text-white underline underline-offset-2">
-            Leadership
-          </h1>
-        </div>
       </div>
     </>
   );

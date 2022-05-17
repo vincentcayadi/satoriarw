@@ -39,7 +39,7 @@ const RoboCard = () => {
             <div className="max-w-sm overflow-hidden">
               <div className="px-6 py-4 bg-opacity-20 rounded-bl-md">
                 <div className="mb-2 text-xl font-bold bg-transparent">
-                  Altium Designer
+                  Altium
                 </div>
                 <p className="text-base bg-transparent">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
