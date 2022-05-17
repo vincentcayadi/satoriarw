@@ -15,12 +15,12 @@ export default function Home() {
               Swimmer, Web Developer and Robotics Engineer
             </h2>
             <p className="mt-6 text-xl duration-300 text-slate-400 hover:translate-x-2">
-              <Link href="/projects">
+              <Link href="/experience">
                 <a>My Experiences →</a>
               </Link>
             </p>
             <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
-              <Link href="/projects">
+              <Link href="/blog">
                 <a>Read My Blog →</a>
               </Link>
             </p>
