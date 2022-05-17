@@ -1,91 +1,81 @@
+import { Accordion } from "@mantine/core";
+
+/* https://css-tricks.com/how-to-animate-the-details-element */
 const RoboCard = () => {
   return (
-    <div className="grid grid-cols-4 gap-8">
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">
-            HTML CSS Javascript
+    <>
+      <Accordion>
+        <Accordion.Item label="Mechanical Engineering">
+          <div className="grid grid-cols-2 gap-6 bg-opacity-20">
+            <div className="max-w-sm overflow-hidden">
+              <div className="px-6 py-4 bg-opacity-20 rounded-bl-md">
+                <div className="mb-2 text-xl font-bold bg-transparent">
+                  Autodesk AutoCAD
+                </div>
+                <p className="text-base bg-transparent">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,x
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+            </div>
+            <div className="max-w-sm overflow-hidden">
+              <div className="px-6 py-4 bg-opacity-20 rounded-br-md">
+                <div className="mb-2 text-xl font-bold bg-transparent">
+                  Fusion 360
+                </div>
+                <p className="text-base bg-transparent">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,x
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+            </div>
           </div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">React.js</div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,x
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">Next.js</div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,x
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">Node.js</div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,x
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">
-            Express.js
+        </Accordion.Item>
+
+        <Accordion.Item label="Electrical Engineering">
+          <div className="grid grid-cols-3 gap-6 bg-opacity-20">
+            <div className="max-w-sm overflow-hidden">
+              <div className="px-6 py-4 bg-opacity-20 rounded-bl-md">
+                <div className="mb-2 text-xl font-bold bg-transparent">
+                  Altium Designer
+                </div>
+                <p className="text-base bg-transparent">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,x
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+            </div>
+            <div className="max-w-sm overflow-hidden">
+              <div className="px-6 py-4 bg-opacity-20 rounded-br-md">
+                <div className="mb-2 text-xl font-bold bg-transparent">
+                  KiCad
+                </div>
+                <p className="text-base bg-transparent">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,x
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+            </div>
+            <div className="max-w-sm overflow-hidden">
+              <div className="px-6 py-4 bg-opacity-20 rounded-br-md">
+                <div className="mb-2 text-xl font-bold bg-transparent">
+                  Eagle
+                </div>
+                <p className="text-base bg-transparent">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,x
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+            </div>
           </div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,x
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">MongoDB</div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,x
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">Aleph.js</div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,x
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-sm overflow-hidden duration-150 border-2 rounded hover:scale-110 transform-gpu">
-        <div className="px-6 py-4">
-          <div className="mb-2 text-xl font-bold text-slate-300">Deno</div>
-          <p className="text-base text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,x
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-      </div>
-    </div>
+        </Accordion.Item>
+      </Accordion>
+    </>
   );
 };
 
