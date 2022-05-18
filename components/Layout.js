@@ -13,6 +13,9 @@ const Layout = ({ children }) => {
             "box-sizing": "border-box",
             "text-decoration": "none",
           },
+          ".mantine-Accordion-label": {
+            margin: "0.2rem",
+          },
         })}
       />
       <MantineProvider

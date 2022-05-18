@@ -15,12 +15,7 @@ export default function Home() {
             <h2 className="mt-2 text-xl text-slate-200">
               Swimmer, Web Developer and Robotics Engineer
             </h2>
-            <p className="mt-6 text-xl duration-300 text-slate-400 hover:translate-x-2">
-              <Link href="/achievement">
-                <a>My Achievements →</a>
-              </Link>
-            </p>
-            <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
+            <p className="mt-4 text-xl duration-300 text-slate-400 hover:translate-x-2">
               <Link href="/experience">
                 <a>My Experiences →</a>
               </Link>
@@ -38,6 +33,11 @@ export default function Home() {
             <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
               <Link href="/contact">
                 <a>Contact Me →</a>
+              </Link>
+            </p>
+            <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
+              <Link href="/about">
+                <a>About Me →</a>
               </Link>
             </p>
           </div>
