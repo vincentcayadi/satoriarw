@@ -1,4 +1,3 @@
-import Navbar from "../components/Nav";
 import Image from "next/image";
 import Link from "next/link";
 import WebDevCard from "../components/WebDevCard";
@@ -57,9 +56,14 @@ export default function Home() {
               <div className="max-w-sm overflow-hidden">
                 <div className="px-6 py-4">
                   <div className="mb-2 text-xl font-bold ">BlockVault</div>
-                  <p className="text-base ">
+                  <p className="text-base">
                     Secure Your Data Using the power of the blockchain
                   </p>
+                  <div className="mt-2 text-center text-white">
+                    <Link href="https://github.com/Vincent-Cayadi/blockvault">
+                      <a>Learn More</a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,7 +100,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="skill" className="h-screen">
+        <div id="skill" className="h-screen pt-10">
           <div>
             <h1>My Skills</h1>
             <div className="p-6 m-4">

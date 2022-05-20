@@ -13,6 +13,9 @@ const Layout = ({ children }) => {
             "box-sizing": "border-box",
             "text-decoration": "none",
           },
+          html: {
+            "scroll-behavior": "smooth",
+          },
           ".mantine-Accordion-label": {
             margin: "0.2rem",
           },
