@@ -51,7 +51,11 @@ export default function Home() {
         <br></br>
         <div id="contact" className="h-screen pt-10">
           <h1>Contact Me</h1>
-          <div className="w-full mt-10 rounded-xl h-1/2 bg-slate-500"></div>
+          <div className="w-full mt-10 rounded-xl h-1/2 bg-slate-500">
+            <div className="grid h-full place-items-center">
+              <div className="grid bg-black rounded-full h-28 w-28 place-items-center"></div>
+            </div>
+          </div>
         </div>
         <br></br>
         <div id="projects" className="h-screen pt-10">
