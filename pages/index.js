@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import WebDevCard from "../components/WebDevCard";
-import RoboCard from "../components/RoboCard";
+import Accordion from "../components/Accordion";
 
 export default function Home() {
   return (
@@ -23,6 +22,11 @@ export default function Home() {
                 </Link>
               </p>
               <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
+                <Link href="#contact">
+                  <a>Contact Me →</a>
+                </Link>
+              </p>
+              <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
                 <Link href="#projects">
                   <a>My Projects →</a>
                 </Link>
@@ -30,11 +34,6 @@ export default function Home() {
               <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
                 <Link href="#skill">
                   <a>My Skills →</a>
-                </Link>
-              </p>
-              <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
-                <Link href="#contact">
-                  <a>Contact Me →</a>
                 </Link>
               </p>
             </div>
@@ -49,6 +48,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <br></br>
+        <div id="contact" className="h-screen pt-10">
+          <h1>Contact Me</h1>
+          <div className="w-full mt-10 rounded-xl h-1/2 bg-slate-500"></div>
+        </div>
+        <br></br>
         <div id="projects" className="h-screen pt-10">
           <h1>Projects</h1>
           <div className="grid grid-cols-3 gap-6 mt-10 h-80 auto-cols-max auto-rows-max">
@@ -100,28 +105,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <br></br>
         <div id="skill" className="h-screen pt-10">
           <div>
             <h1>My Skills</h1>
-            <div className="p-6 m-4">
-              <h1 className="text-xl text-white underline underline-offset-2">
-                Web Development
-              </h1>
-              <p className="my-4 text-white">
-                Web Dev is fun. I like to make and replicate Websites
-              </p>
-              <WebDevCard />
-            </div>
-            <div className="p-6 m-4">
-              <h1 className="my-4 text-xl text-white underline underline-offset-2">
-                Robotics Engineer
-              </h1>
-              <RoboCard />
+            <div className="p-6">
+              <Accordion />
             </div>
           </div>
-        </div>
-        <div id="contact" className="h-screen">
-          <h1>Contact Me</h1>
         </div>
       </div>
     </>

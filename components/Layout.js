@@ -16,8 +16,8 @@ const Layout = ({ children }) => {
           html: {
             "scroll-behavior": "smooth",
           },
-          ".mantine-Accordion-label": {
-            margin: "0.2rem",
+          ".mantine-hgwlez": {
+            padding: "0.2rem",
           },
         })}
       />
