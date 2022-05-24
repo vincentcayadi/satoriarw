@@ -5,14 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    container: {
-      center: true,
-      screen: {
-        lg: "1124px",
-        xl: "1124px",
-        "2xl": "1124px",
-      },
-    },
   },
   plugins: [],
 };
