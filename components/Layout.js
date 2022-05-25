@@ -7,15 +7,6 @@ const Layout = ({ children }) => {
     <>
       <Global
         styles={(theme) => ({
-          "*": {
-            padding: "0",
-            margin: "0",
-            "box-sizing": "border-box",
-            "text-decoration": "none",
-          },
-          html: {
-            "scroll-behavior": "smooth",
-          },
           ".mantine-hgwlez": {
             padding: "0.2rem",
           },

@@ -1,97 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
+import About from "../sections/About";
 import Accordion from "../components/Accordion";
-import { Tooltip } from "@mantine/core";
-import { IconContext } from "react-icons";
-import { FaDiscord } from "react-icons/fa";
-import { FiCoffee } from "react-icons/fi";
-import { VscGithubAlt } from "react-icons/vsc";
 export default function Home() {
   return (
     <>
+      <About />
       <div className="w-1/2 mx-auto">
-        <div className="grid h-screen place-items-center">
-          <div>
-            <div className="inline-block mr-12 align-top">
-              <h1 className="text-3xl font-bold text-slate-100">
-                Hi, I&apos;m Vincent
-                <span className="p-0 m-0 text-4xl animate-wave">👋</span>
-              </h1>
-              <h2 className="mt-2 text-xl text-slate-200">
-                Swimmer, Web Developer and Robotics Engineer
-              </h2>
-              <p className="mt-4 text-xl duration-300 text-slate-400 hover:translate-x-2">
-                <Link href="/blog">
-                  <a>Read My Blog →</a>
-                </Link>
-              </p>
-              <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
-                <Link href="#projects">
-                  <a>My Projects →</a>
-                </Link>
-              </p>
-              <p className="mt-2 text-xl duration-300 text-slate-400 hover:translate-x-2">
-                <Link href="#skill">
-                  <a>My Skills →</a>
-                </Link>
-              </p>
-              <div className="grid w-1/3 grid-cols-3 gap-2 my-4 auto-rows-fr">
-                <IconContext.Provider value={{ size: "1.5rem" }}>
-                  <Tooltip
-                    color="dark"
-                    withArrow
-                    position="left"
-                    transition="fade"
-                    transitionDuration={200}
-                    label="Come chat with me on Discord"
-                    className="inline-block p-2 mx-auto duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
-                  >
-                    <Link href="https://discord.com/users/678790092000854017">
-                      <a>
-                        <FaDiscord />
-                      </a>
-                    </Link>
-                  </Tooltip>
-                  <Tooltip
-                    color="dark"
-                    withArrow
-                    position="bottom"
-                    transition="fade"
-                    transitionDuration={200}
-                    label="View My projects on Github"
-                    className="inline-block p-2 mx-auto duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
-                  >
-                    <Link href="https://github.com/Vincent-Cayadi">
-                      <a>
-                        <VscGithubAlt />
-                      </a>
-                    </Link>
-                  </Tooltip>
-                  <Tooltip
-                    color="dark"
-                    withArrow
-                    position="right"
-                    transition="fade"
-                    transitionDuration={200}
-                    label="Support Me!"
-                    className="inline-block p-2 mx-auto duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
-                  >
-                    <FiCoffee />
-                  </Tooltip>
-                </IconContext.Provider>
-              </div>
-            </div>
-            <div className="inline-block align-top">
-              <Image
-                src="https://avatars.githubusercontent.com/u/57314503?v=4"
-                width={240}
-                height={240}
-                alt="pfp"
-                className="rounded-2xl"
-              ></Image>
-            </div>
-          </div>
-        </div>
         <div id="projects" className="h-screen pt-10">
           <h1>Projects</h1>
           <div className="grid grid-cols-3 gap-6 mt-10 h-80 auto-rows-max">
