@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             <title>Vincent Cayadi</title>
             <meta
               name="name"
-              content="web development, programming, student, athelete, swimmer"
+              content="web development, programming, student, athelete, swimmer, github, discord, developer, learner, engineer, mechanical engineer, mechanical engineering, electrical, electrical engineer, electrical engineering"
             ></meta>
           </Head>
           <main>{children}</main>
