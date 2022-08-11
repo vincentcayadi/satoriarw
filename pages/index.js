@@ -6,10 +6,9 @@ export default function Home() {
     <>
       <div className="grid h-screen place-items-center bg-gradient-to-b to-blue-500 from-indigo-500">
         <div>
-          <div className="inline-block mr-12 align-top">
+          <div className="inline-block mr-12">
             <h1 className="text-3xl font-bold text-slate-100">
               Hi, I&apos;m Vincent
-              <span className="p-0 m-0 text-4xl animate-wave">👋</span>
             </h1>
             <h2 className="mt-2 text-xl text-slate-200">
               Swimmer, Web Developer and Robotics Engineer
@@ -22,11 +21,6 @@ export default function Home() {
             <p className="mt-2 text-xl text-blue-100 duration-300 hover:translate-x-2">
               <Link href="#projects">
                 <a>My Projects →</a>
-              </Link>
-            </p>
-            <p className="mt-2 text-xl text-blue-100 duration-300 hover:translate-x-2">
-              <Link href="#skill">
-                <a>My Skills →</a>
               </Link>
             </p>
             <Icon />
@@ -44,7 +38,10 @@ export default function Home() {
       </div>
       <div className="grid h-screen place-items-center from-blue-500 to-cyan-500 bg-gradient-to-b">
         <div>
-          <h1 className="mb-4 text-3xl font-bold text-center text-slate-100">
+          <h1
+            className="mb-4 text-3xl font-bold text-center text-slate-100"
+            id="projects"
+          >
             Projects
           </h1>
           <div className="grid grid-flow-col gap-2 text-center">
