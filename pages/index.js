@@ -46,7 +46,7 @@ export default function Home() {
         Projects
       </div>
       <div className="grid h-screen bg-indigo-500 place-items-center">
-        Skills
+        Contact Me
       </div>
     </>
   );
