@@ -4,7 +4,7 @@ import Icon from "../components/Icon";
 export default function Home() {
   return (
     <>
-      <div className="grid h-screen place-items-center bg-gradient-to-b to-cyan-500 from-blue-500">
+      <div className="grid h-screen select-none place-items-center bg-gradient-to-b to-blue-500 from-indigo-500">
         <div>
           <div className="inline-block mr-12 align-top">
             <h1 className="text-3xl font-bold text-slate-100">
@@ -42,10 +42,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="grid h-screen place-items-center from-cyan-500 to-indigo-500 bg-gradient-to-b">
-        Projects
+      <div className="grid h-screen place-items-center from-blue-500 to-cyan-500 bg-gradient-to-b">
+        <div>
+          <h1 className="text-3xl font-bold text-slate-100">Projects</h1>
+          <div className="grid grid-rows-4 gap-2 gird-cols-1">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+          </div>
+        </div>
       </div>
-      <div className="grid h-screen bg-indigo-500 place-items-center">
+      <div className="grid h-screen bg-cyan-500 place-items-center">
         Contact Me
       </div>
     </>
