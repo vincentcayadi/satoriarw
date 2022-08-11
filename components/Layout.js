@@ -10,8 +10,12 @@ const Layout = ({ children }) => {
             name="name"
             content="web development, programming, student, athlete, swimmer, github, discord, developer, learner, engineer, mechanical engineer, mechanical engineering, electrical, electrical engineer, electrical engineering"
           ></meta>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
         </Head>
-        <main>{children}</main>
+        <main className="select-none font-manrope">{children}</main>
       </div>
     </>
   );
