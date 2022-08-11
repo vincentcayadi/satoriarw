@@ -36,12 +36,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="grid h-screen place-items-center from-blue-500 to-cyan-500 bg-gradient-to-b">
+      <div
+        className="grid h-screen place-items-center from-blue-500 to-cyan-500 bg-gradient-to-b"
+        id="projects"
+      >
         <div>
-          <h1
-            className="mb-4 text-3xl font-bold text-center text-slate-100"
-            id="projects"
-          >
+          <h1 className="mb-4 text-3xl font-bold text-center text-slate-100">
             Projects
           </h1>
           <div className="grid grid-flow-col gap-2 text-center">
