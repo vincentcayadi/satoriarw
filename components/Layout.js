@@ -3,7 +3,7 @@ import Head from "next/head";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="container select-none" lang="en">
+      <div lang="en">
         <Head>
           <title>Vincent Cayadi</title>
           <meta
