@@ -51,12 +51,15 @@ export default function Home() {
         </div>
       </div>
       <div className="grid h-screen bg-cyan-500 place-items-center">
-        <div className="grid w-1/2 p-2 mx-auto bg-white rounded-md h-1/2 drop-shadow-lg place-items-center">
-          <div className="font-inter"></div>
-          <button className="p-2 font-bold border-2 border-black rounded-md text-l">
-            Download My Resume
-          </button>
-          <p className="text-base font-bold animate-bounce">Turn me over</p>
+        <div className="grid w-1/2 p-2 mx-auto text-center bg-white rounded-md h-1/2 drop-shadow-lg place-items-center">
+          <div>
+            <button className="block p-2 mb-4 font-bold border-2 border-black rounded-md text-l">
+              Download My Resume
+            </button>
+            <button className="text-base font-bold animate-bounce">
+              Turn me over
+            </button>
+          </div>
         </div>
       </div>
     </>
