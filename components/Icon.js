@@ -11,7 +11,6 @@ export default function Icon() {
       <div className="grid w-1/3 grid-cols-3 gap-2 my-4 auto-rows-fr">
         <IconContext.Provider value={{ size: "1.5rem" }}>
           <Tooltip
-            color="dark"
             withArrow
             position="left"
             transition="fade"
@@ -26,12 +25,11 @@ export default function Icon() {
             </Link>
           </Tooltip>
           <Tooltip
-            color="dark"
             withArrow
             position="bottom"
             transition="fade"
             transitionDuration={200}
-            label="View My Projects On Github"
+            label="Visit My Github"
             className="inline-block p-2 mx-auto text-white duration-200 bg-indigo-600 rounded-lg drop-shadow-xl hover:scale-105"
           >
             <Link href="https://github.com/Vincent-Cayadi">
@@ -41,7 +39,6 @@ export default function Icon() {
             </Link>
           </Tooltip>
           <Tooltip
-            color="dark"
             withArrow
             position="right"
             transition="fade"
