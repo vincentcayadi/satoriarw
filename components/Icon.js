@@ -16,8 +16,8 @@ export default function Icon() {
             position="left"
             transition="fade"
             transitionDuration={200}
-            label="Come chat with me on Discord"
-            className="inline-block p-2 mx-auto duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
+            label="Chat with me on Discord"
+            className="inline-block p-2 mx-auto text-white duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
           >
             <Link href="https://discord.com/users/678790092000854017">
               <a>
@@ -31,8 +31,8 @@ export default function Icon() {
             position="bottom"
             transition="fade"
             transitionDuration={200}
-            label="View My projects on Github"
-            className="inline-block p-2 mx-auto duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
+            label="View My Projects On Github"
+            className="inline-block p-2 mx-auto text-white duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
           >
             <Link href="https://github.com/Vincent-Cayadi">
               <a>
@@ -47,7 +47,7 @@ export default function Icon() {
             transition="fade"
             transitionDuration={200}
             label="Support Me!"
-            className="inline-block p-2 mx-auto duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
+            className="inline-block p-2 mx-auto text-white duration-200 rounded-lg shadow-xl bg-slate-800 hover:scale-105"
           >
             <FiCoffee />
           </Tooltip>
