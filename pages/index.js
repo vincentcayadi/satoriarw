@@ -69,10 +69,10 @@ export default function Home() {
       </div>
       <div className="grid h-screen bg-gradient-to-b from-sky-500 to-cyan-500 place-items-center drop-shadow-lg">
         <div className="grid w-3/4 p-8 mx-auto text-center bg-white rounded h-3/4 drop-shadow-lg place-items-center">
-          <div className="grid w-full h-full grid-cols-2 text-center place-content-center">
+          <div className="grid w-full h-full grid-cols-1 text-center sm:grid-cols-2 place-content-center">
             <div className="grid grid-cols-1 grid-rows-4 gap-2 sm:gap-6 sm:grid-cols-2 sm:grid-rows-2 place-items-center">
               <IconContext.Provider
-                value={{ size: "1.5rem", className: "inline" }}
+                value={{ size: "1.5rem", className: "inline-block" }}
               >
                 <a
                   href="https://www.instagram.com/vincentcayadi/"
@@ -116,7 +116,7 @@ export default function Home() {
                 </a>
               </IconContext.Provider>
             </div>
-            <div className="h-full bg-white rounded-md drop-shadow-lg">
+            <div className="h-full mt-4 bg-white rounded-md drop-shadow-lg sm:mt-0">
               <form method="POST" className="p-4 text-left">
                 <label className="block mb-2">Your Name:</label>
                 <input
@@ -139,7 +139,7 @@ export default function Home() {
                   id="subject"
                   name="subject"
                   placeholder="Write something..."
-                  className="w-full p-2 border border-gray-300 rounded-md h-1/5"
+                  className="w-full p-2 border border-gray-300 rounded-md h-1/6"
                 ></textarea>
                 <div className="grid w-full place-content-end">
                   <button className="px-4 py-2 my-2 duration-300 bg-gray-300 border border-gray-300 rounded-md hover:bg-transparent ">
