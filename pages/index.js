@@ -8,23 +8,23 @@ export default function Home() {
   return (
     <>
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
-        <div className="w-3/4 mx-auto sm:w-max">
-          <div className="inline-block sm:mr-16 ">
-            <h1 className="text-3xl font-bold text-purple-100 sm:text-4xl">
+        <div className="w-3/4 mx-auto text-center text-purple-100 sm:w-max">
+          <div>
+            <h1 className="text-3xl font-bold sm:text-4xl">
               Hi, I&apos;m Vincent Cayadi
             </h1>
             <div className="mt-6">
-              <p className="text-xl text-purple-100 sm:text-2xl">
+              <p className="text-xl sm:text-2xl">
                 Click on one of these links to start exploring
               </p>
-              <p className="mt-4 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 ">
+              <p className="mt-4 duration-300 t text-l sm:text-xl sm:hover:scale-125 ">
                 <Link href="#projects">
-                  <a>My Projects →</a>
+                  <a>My Projects</a>
                 </Link>
               </p>
-              <p className="mt-2 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 ">
+              <p className="mt-4 duration-300 purple-100 text text-l sm:text-xl sm:hover:scale-125 ">
                 <Link href="#about">
-                  <a>About Me →</a>
+                  <a>About Me</a>
                 </Link>
               </p>
             </div>
