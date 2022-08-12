@@ -11,19 +11,19 @@ export default function Home() {
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-center text-purple-100 sm:w-max">
           <div>
-            <h1 className="text-2xl font-bold sm:text-4xl">
+            <h1 className="text-3xl font-bold sm:text-4xl">
               Hi, I&apos;m Vincent Cayadi
             </h1>
             <div className="mt-6">
               <p className="text-xl sm:text-2xl">
                 Interact with the links to start exploring
               </p>
-              <p className="mt-2 text-lg text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125">
+              <p className="mt-2 text-base text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125">
                 <Link href="#projects">
                   <a>My Projects</a>
                 </Link>
               </p>
-              <p className="mt-2 text-lg text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125 ">
+              <p className="mt-2 text-base text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125 ">
                 <Link href="#about">
                   <a>About Me</a>
                 </Link>
