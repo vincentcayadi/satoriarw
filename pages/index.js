@@ -80,7 +80,7 @@ export default function Home() {
               <IconContext.Provider
                 value={{ size: "1.5rem", className: "inline-block" }}
               >
-                <div
+                <a
                   href="https://www.instagram.com/vincentcayadi/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -90,8 +90,8 @@ export default function Home() {
                   <a className="inline p-2 text-base sm:text-l md:text-xl">
                     Follow Me On Insta
                   </a>
-                </div>
-                <div
+                </a>
+                <a
                   href="https://www.github.com/Vincent-Cayadi"
                   target="_blank"
                   rel="noopner noreferrer"
@@ -101,8 +101,8 @@ export default function Home() {
                   <a className="inline p-2 text-base sm:text-l md:text-xl ">
                     View My Github Page
                   </a>
-                </div>
-                <div
+                </a>
+                <a
                   href="https://discord.com/users/678790092000854017"
                   target="_blank"
                   rel="noopner noreferrer"
@@ -112,8 +112,8 @@ export default function Home() {
                   <a className="inline p-2 text-base sm:text-l md:text-xl">
                     Chat On Discord
                   </a>
-                </div>
-                <div
+                </a>
+                <a
                   href="https://www.ko-fi.com/vincentcayadi"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -123,7 +123,7 @@ export default function Home() {
                   <a className="inline p-2 text-base sm:text-l md:text-xl">
                     Support Me on Kofi
                   </a>
-                </div>
+                </a>
               </IconContext.Provider>
             </div>
             <div className="h-full mt-4 bg-white rounded-md drop-shadow-2xl sm:mt-0">
