@@ -42,9 +42,12 @@ export default function Home() {
         className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
-        <h1 className="mb-4 text-3xl font-bold text-center text-slate-100">
-          About Me
-        </h1>
+        <div className="text-center text-slate-100">
+          <h1 className="mb-4 text-3xl font-bold">About Me</h1>
+          <p className="text-xl">Robotics Enginner</p>
+          <p className="text-xl">Web Developer</p>
+          <p className="text-xl">Athlete</p>
+        </div>
       </div>
       <div
         className="grid h-screen place-items-center from-blue-500 to-sky-500 bg-gradient-to-b"
