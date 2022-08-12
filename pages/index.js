@@ -134,7 +134,7 @@ export default function Home() {
                   placeholder="joebloggs@gmail.com"
                   className="block w-full p-2 mb-6 border border-gray-300 rounded-md"
                 />
-                <label className="block mb-2">Subject</label>
+                <label className="block mb-2">Subject:</label>
                 <textarea
                   id="subject"
                   name="subject"
@@ -142,7 +142,7 @@ export default function Home() {
                   className="w-full p-2 border border-gray-300 rounded-md h-1/6"
                 ></textarea>
                 <div className="grid w-full place-content-end">
-                  <button className="px-4 py-2 my-2 duration-300 bg-gray-300 border border-gray-300 rounded-md hover:bg-transparent ">
+                  <button className="px-4 py-2 my-2 duration-300 bg-gray-300 border border-gray-300 rounded-md hover:bg-transparent">
                     <a className="align-middle text-l">Send</a>
                   </button>
                 </div>
