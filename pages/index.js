@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { SiDiscord } from "react-icons/si";
 import { IconContext } from "react-icons";
@@ -17,7 +16,7 @@ export default function Home() {
               <p className="text-xl sm:text-2xl">
                 Interact with the links to start exploring
               </p>
-              <p className="mt-4 duration-300 t text-l sm:text-xl sm:hover:scale-125 ">
+              <p className="mt-4 duration-300 t text-l sm:text-xl sm:hover:scale-125">
                 <Link href="#projects">
                   <a>My Projects</a>
                 </Link>
@@ -83,50 +82,46 @@ export default function Home() {
               <IconContext.Provider
                 value={{ size: "1.5rem", className: "inline-block" }}
               >
-                <a
-                  href="https://www.github.com/Vincent-Cayadi"
-                  target="_blank"
-                  rel="noopner noreferrer"
-                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
-                >
-                  <FiGithub />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
-                    My Github Page
-                  </a>
-                </a>
-                <a
-                  href="https://discord.com/users/678790092000854017"
-                  target="_blank"
-                  rel="noopner noreferrer"
-                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
-                >
-                  <SiDiscord />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
-                    Chat On Discord
-                  </a>
-                </a>
-                <a
-                  href="https://www.instagram.com/vincentcayadi/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
-                >
-                  <FaInstagram />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
-                    Follow Me On Insta
-                  </a>
-                </a>
-                <a
-                  href="https://www.ko-fi.com/vincentcayadi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
-                >
-                  <FiCoffee />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
-                    Support Me on Kofi
-                  </a>
-                </a>
+                <div className="p-2 duration-500 border-2 border-transparent sm:hover:border-b-gray-200">
+                  <Link href="https://www.github.com/Vincent-Cayadi">
+                    <div>
+                      <FiGithub />
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                        My Github Page
+                      </a>
+                    </div>
+                  </Link>
+                </div>
+                <div className="p-2 duration-500 border-2 border-transparent sm:hover:border-b-gray-200">
+                  <Link href="https://discord.com/users/678790092000854017">
+                    <div>
+                      <SiDiscord />
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                        Chat On Discord
+                      </a>
+                    </div>
+                  </Link>
+                </div>
+                <div className="p-2 duration-500 border-2 border-transparent sm:hover:border-b-gray-200">
+                  <Link href="https://www.instagram.com/vincentcayadi/">
+                    <div>
+                      <FaInstagram />
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                        Follow Me On Insta
+                      </a>
+                    </div>
+                  </Link>
+                </div>
+                <div className="p-2 duration-500 border-2 border-transparent sm:hover:border-b-gray-200">
+                  <Link href="https://www.ko-fi.com/vincentcayadi">
+                    <div>
+                      <FiCoffee />
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                        Support Me On KoFi
+                      </a>
+                    </div>
+                  </Link>
+                </div>
               </IconContext.Provider>
             </div>
           </div>
