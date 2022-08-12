@@ -3,7 +3,6 @@ import { FaInstagram } from "react-icons/fa";
 import { SiDiscord } from "react-icons/si";
 import { IconContext } from "react-icons";
 import { FiGithub, FiCoffee } from "react-icons/fi";
-import { BsArrowUpRight } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -86,19 +85,11 @@ export default function Home() {
             </div>
           </div>
           <div className="grid place-items-center">
-            <IconContext.Provider
-              value={{
-                size: "1rem",
-                className: "ml-2 inline-block align-middle",
-              }}
-            >
-              <Link href="https://github.com/Vincent-Cayadi?tab=repositories">
-                <a className="inline-block px-8 py-2 my-4 text-base font-semibold duration-300 bg-white rounded-md text-slate-800 sm:hover:scale-105">
-                  View More
-                  <BsArrowUpRight />
-                </a>
-              </Link>
-            </IconContext.Provider>
+            <Link href="https://github.com/Vincent-Cayadi?tab=repositories">
+              <a className="inline-block px-8 py-2 my-4 text-base font-semibold duration-300 bg-white rounded-md text-slate-800 sm:hover:scale-105">
+                View More
+              </a>
+            </Link>
           </div>
         </div>
       </div>
