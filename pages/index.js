@@ -4,26 +4,31 @@ import Icon from "../components/Icon";
 export default function Home() {
   return (
     <>
-      <div className="grid h-screen place-items-center bg-gradient-to-b to-blue-500 from-indigo-500">
-        <div>
-          <div className="inline-block mr-12">
-            <h1 className="text-3xl font-bold text-slate-100">
+      <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-blue-500 from-indigo-500">
+        <div className="w-1/2 mx-auto md:w-max">
+          <div className="inline-block md:mr-12">
+            <h1 className="text-2xl font-bold md:text-3xl text-slate-100">
               Hi, I&apos;m Vincent
             </h1>
-            <h2 className="mt-2 text-xl text-slate-200">
-              Swimmer, Web Developer and Robotics Engineer
+            <h2 className="mt-2 text-base md:text-xl text-slate-200">
+              Robotics Engineer
             </h2>
-            <p className="mt-4 text-xl text-blue-100 duration-300 hover:translate-x-2">
+            <h2 className="mt-2 text-base md:text-xl text-slate-200">
+              Web Developer
+            </h2>
+            <h2 className="mt-2 text-base md:text-xl text-slate-200">
+              Athelete
+            </h2>
+            <p className="mt-2 text-base text-blue-100 duration-300 md:text-xl hover:translate-x-2">
               <Link href="/blog">
                 <a>Read My Blog →</a>
               </Link>
             </p>
-            <p className="mt-2 text-xl text-blue-100 duration-300 hover:translate-x-2">
+            <p className="mt-2 text-base text-blue-100 duration-300 md:text-xl hover:translate-x-2">
               <Link href="#projects">
                 <a>My Projects →</a>
               </Link>
             </p>
-            <Icon />
           </div>
           <div className="inline-block align-top">
             <Image

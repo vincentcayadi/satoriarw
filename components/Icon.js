@@ -8,7 +8,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 export default function Icon() {
   return (
     <>
-      <div className="grid w-1/3 grid-cols-3 gap-2 my-4 auto-rows-fr">
+      <div className="grid w-1/3 grid-cols-1 gap-2 my-4 auto-rows-fr md:grid-cols-3">
         <IconContext.Provider value={{ size: "1.5rem" }}>
           <Tooltip
             withArrow
