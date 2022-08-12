@@ -11,11 +11,11 @@ export default function Home() {
         <div className="w-3/4 mx-auto sm:w-max">
           <div className="inline-block sm:mr-16 ">
             <h1 className="text-2xl font-bold text-purple-100 underline sm:text-3xl underline-offset-2">
-              Hi, I&apos;m Vincent
+              Hi, I&apos;m Vincent Cayadi
             </h1>
             <div className="mt-4">
-              <p className="text-purple-100 text-l sm:text-xl font-firacode">
-                Welcome, click on one of these links to start exploring
+              <p className="text-xl text-purple-100 sm:text-2xl font-firacode">
+                Click on one of these links to start exploring
               </p>
               <p className="mt-2 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 font-firacode">
                 <Link href="#projects">
@@ -53,19 +53,19 @@ export default function Home() {
           <div className="grid grid-cols-5 gap-2 text-center">
             <div className="col-span-3 px-4 py-2 bg-white rounded-md">
               Robocup Junior Soccer
-              <p className="text-sm text-left text-gray-400 align-middle">
+              <p className="text-sm text-left text-gray-400">
                 Autodesk AutoCAD, Autodesk Fusion 360, Altium Designer
               </p>
             </div>
             <div className="col-span-2 px-4 py-2 bg-white rounded-md">
               BlockVault
-              <p className="text-sm text-left text-gray-400 align-middle">
+              <p className="text-sm text-left text-gray-400 ">
                 React, TailWindCSS, Moralis
               </p>
             </div>
             <div className="col-span-2 px-4 py-2 bg-white rounded-md">
               Blog
-              <p className="text-sm text-left text-gray-400 align-middle">
+              <p className="text-sm text-left text-gray-400 ">
                 NextJS, TailWindCSS
               </p>
             </div>
@@ -87,7 +87,7 @@ export default function Home() {
                   className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FaInstagram />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                  <a className="inline p-2 text-base sm:text-l md:text-xl">
                     Follow Me On Insta
                   </a>
                 </div>
@@ -98,7 +98,7 @@ export default function Home() {
                   className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FiGithub />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                  <a className="inline p-2 text-base sm:text-l md:text-xl ">
                     View My Github Page
                   </a>
                 </div>
@@ -109,7 +109,7 @@ export default function Home() {
                   className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <SiDiscord />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                  <a className="inline p-2 text-base sm:text-l md:text-xl">
                     Chat On Discord
                   </a>
                 </div>
@@ -120,7 +120,7 @@ export default function Home() {
                   className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FiCoffee />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                  <a className="inline p-2 text-base sm:text-l md:text-xl">
                     Support Me on Kofi
                   </a>
                 </div>
@@ -153,7 +153,7 @@ export default function Home() {
                 ></textarea>
                 <div className="grid w-full place-content-end">
                   <button className="px-4 py-2 my-2 duration-300 bg-gray-300 border border-gray-300 rounded-md hover:bg-transparent">
-                    <a className="align-middle text-l">Send</a>
+                    <a className=" text-l">Send</a>
                   </button>
                 </div>
               </form>
