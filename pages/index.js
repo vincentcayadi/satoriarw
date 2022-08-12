@@ -54,16 +54,33 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="grid h-screen place-items-center from-blue-500 to-sky-500 bg-gradient-to-b"
+        className="grid w-full h-screen place-items-center from-blue-500 to-sky-500 bg-gradient-to-b"
         id="projects"
       >
-        <div>
+        <div className="w-3/4">
           <h1 className="mb-4 text-3xl font-bold text-center text-slate-100">
             Projects
           </h1>
-          <div className="grid grid-flow-col gap-2 text-center">
-            <div>BlockVault</div>
-            <div>Robocup Soccer Junior</div>
+          <div className="grid grid-cols-5 gap-2 text-center">
+            <div className="col-span-3 px-4 py-2 bg-white rounded-md">
+              Robocup Junior Soccer
+              <p className="text-sm text-left text-gray-400 align-middle">
+                Autodesk AutoCAD, Autodesk Fusion 360, Altium Designer
+              </p>
+            </div>
+            <div className="col-span-2 px-4 py-2 bg-white rounded-md">
+              BlockVault
+              <p className="text-sm text-left text-gray-400 align-middle">
+                React, TailWindCSS, Moralis
+              </p>
+            </div>
+            <div className="col-span-2 px-4 py-2 bg-white rounded-md">
+              Blog
+              <p className="text-sm text-left text-gray-400 align-middle">
+                NextJS, TailWindCSS
+              </p>
+            </div>
+            <div className="col-span-3 px-4 py-2 bg-white rounded-md">KMS</div>
           </div>
         </div>
       </div>
