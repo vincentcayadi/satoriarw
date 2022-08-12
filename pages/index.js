@@ -39,11 +39,11 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 text-left sm:grid-cols-2 text-slate-100">
           <div>
             <h1 className="mb-4 text-3xl font-bold">About Me</h1>
-            <h2 className="mt-2 text-xl">Robotics Enginner</h2>
+            <h2 className="mt-4 text-xl">Robotics Enginner</h2>
             <p>I make Robots for fun</p>
-            <h2 className="mt-2 text-xl">Web Developer</h2>
+            <h2 className="mt-4 text-xl">Web Developer</h2>
             <p>I like to make websites</p>
-            <h2 className="mt-2 text-xl">Athlete</h2>
+            <h2 className="mt-4 text-xl">Athlete</h2>
             <p>I like doing sports</p>
           </div>
           <div className="mt-4 sm:mt-0">
