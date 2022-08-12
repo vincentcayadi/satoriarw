@@ -36,7 +36,7 @@ export default function Home() {
         className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
-        <div className="grid grid-cols-1 gap-8 text-left sm:grid-cols-2 text-slate-100">
+        <div className="grid grid-cols-1 gap-0 sm:gap-8 text-left sm:grid-cols-2 text-slate-100">
           <div>
             <h1 className="mb-4 text-3xl font-bold">About Me</h1>
             <h2 className="mt-4 text-xl">Robotics Enginner</h2>
@@ -46,7 +46,7 @@ export default function Home() {
             <h2 className="mt-4 text-xl">Athlete</h2>
             <p>I like doing sports</p>
           </div>
-          <div className="mt-2 sm:mt-0">
+          <div className="mt-4 sm:mt-0">
             <Image
               src="https://avatars.githubusercontent.com/u/57314503?v=4"
               width={240}
