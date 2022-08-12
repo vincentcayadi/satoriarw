@@ -13,13 +13,8 @@ export default function Home() {
             <h1 className="text-2xl font-bold sm:text-3xl text-slate-100">
               Hi, I&apos;m Vincent
             </h1>
-            <div className="mt-4">
-              <p className="mt-2 text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
-                <Link href="/blog">
-                  <a>Read My Blog →</a>
-                </Link>
-              </p>
-              <p className="mt-2 text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
+            <div className="mt-10">
+              <p className="text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
                 <Link href="#projects">
                   <a>My Projects →</a>
                 </Link>
@@ -137,7 +132,7 @@ export default function Home() {
                 </a>
               </IconContext.Provider>
             </div>
-            <div className="h-full mt-4 bg-white rounded-md drop-shadow-xl sm:mt-0">
+            <div className="h-full mt-4 bg-white rounded-md drop-shadow-2xl sm:mt-0">
               <form method="POST" className="p-4 text-left">
                 <label className="block mb-2">Your Name:</label>
                 <input
