@@ -16,7 +16,7 @@ export default function Home() {
             </h1>
             <div className="mt-6">
               <p className="text-xl sm:text-2xl">
-                Interact with the links to start exploring
+                Click on the links to start exploring
               </p>
               <p className="mt-2 text-base text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125">
                 <Link href="#projects">
