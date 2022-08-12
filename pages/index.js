@@ -17,12 +17,12 @@ export default function Home() {
               <p className="text-xl sm:text-2xl">
                 Interact with the links to start exploring
               </p>
-              <p className="mt-4 text-lg text-purple-100 duration-300 sm:text-xl sm:hover:scale-125">
+              <p className="mt-2 text-lg text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125">
                 <Link href="#projects">
                   <a>My Projects</a>
                 </Link>
               </p>
-              <p className="mt-4 text-lg text-purple-100 duration-300 sm:text-xl sm:hover:scale-125 ">
+              <p className="mt-2 text-lg text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125 ">
                 <Link href="#about">
                   <a>About Me</a>
                 </Link>
