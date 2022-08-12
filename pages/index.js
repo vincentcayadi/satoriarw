@@ -46,7 +46,7 @@ export default function Home() {
         className="grid w-full h-screen place-items-center from-blue-500 to-sky-500 bg-gradient-to-b"
         id="projects"
       >
-        <div className="w-3/4">
+        <div className="w-3/4 sm:w-2/3">
           <h1 className="mb-4 text-3xl font-bold text-center text-slate-100">
             Projects
           </h1>
