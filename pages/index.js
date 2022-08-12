@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import Icon from "../components/Icon";
 export default function Home() {
   return (
     <>
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-blue-500 from-indigo-500">
-        <div className="w-1/2 mx-auto sm:w-max">
+        <div className="w-3/4 mx-auto sm:w-max">
           <div className="inline-block sm:mr-16 ">
             <h1 className="text-2xl font-bold sm:text-3xl text-slate-100">
               Hi, I&apos;m Vincent
