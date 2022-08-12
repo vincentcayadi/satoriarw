@@ -10,19 +10,19 @@ export default function Home() {
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto sm:w-max">
           <div className="inline-block sm:mr-16 ">
-            <h1 className="text-2xl font-bold text-purple-100 underline sm:text-3xl underline-offset-2">
+            <h1 className="text-3xl font-bold text-purple-100 sm:text-4xl">
               Hi, I&apos;m Vincent Cayadi
             </h1>
-            <div className="mt-4">
-              <p className="text-xl text-purple-100 sm:text-2xl font-firacode">
+            <div className="mt-6">
+              <p className="text-xl text-purple-100 sm:text-2xl">
                 Click on one of these links to start exploring
               </p>
-              <p className="mt-2 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 font-firacode">
+              <p className="mt-4 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 ">
                 <Link href="#projects">
                   <a>My Projects →</a>
                 </Link>
               </p>
-              <p className="mt-2 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 font-firacode">
+              <p className="mt-2 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 ">
                 <Link href="#about">
                   <a>About Me →</a>
                 </Link>
