@@ -11,7 +11,7 @@ export default function Home() {
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-center text-purple-100 sm:w-max">
           <div>
-            <h1 className="text-3xl font-bold sm:text-4xl">
+            <h1 className="text-2xl font-bold sm:text-4xl">
               Hi, I&apos;m Vincent Cayadi
             </h1>
             <div className="mt-6">
@@ -46,7 +46,7 @@ export default function Home() {
             <h2 className="mt-4 text-xl">Athlete</h2>
             <p>I like doing sports</p>
           </div>
-          <div className="mt-4 sm:mt-0">
+          <div className="mt-2 sm:mt-0">
             <Image
               src="https://avatars.githubusercontent.com/u/57314503?v=4"
               width={240}
