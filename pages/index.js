@@ -3,6 +3,8 @@ import { FaInstagram } from "react-icons/fa";
 import { SiDiscord } from "react-icons/si";
 import { IconContext } from "react-icons";
 import { FiGithub, FiCoffee } from "react-icons/fi";
+import { BsArrowUpRight } from "react-icons/bs";
+
 export default function Home() {
   return (
     <>
@@ -50,25 +52,53 @@ export default function Home() {
             Projects
           </h1>
           <div className="grid grid-cols-5 gap-2 text-center">
-            <div className="col-span-3 px-4 py-2 bg-white rounded-md">
-              Robocup Junior Soccer
-              <p className="text-sm text-left text-gray-400">
-                Autodesk AutoCAD, Autodesk Fusion 360, Altium Designer
+            <div className="col-span-3 bg-white rounded-md">
+              <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
+                Robocup Junior Soccer
+              </p>
+              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
+                AutoCAD, Fusion 360, Altium Designer
               </p>
             </div>
-            <div className="col-span-2 px-4 py-2 bg-white rounded-md">
-              BlockVault
-              <p className="text-sm text-left text-gray-400 ">
+            <div className="col-span-2 bg-white rounded-md">
+              <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
+                BlockVault
+              </p>
+              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
                 React, TailWindCSS, Moralis
               </p>
             </div>
-            <div className="col-span-2 px-4 py-2 bg-white rounded-md">
-              Blog
-              <p className="text-sm text-left text-gray-400 ">
-                NextJS, TailWindCSS
+            <div className="col-span-2 bg-white rounded-md">
+              <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
+                Insert Cool Project
+              </p>
+              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
+                Lorem ipsum dolor sit amet,
               </p>
             </div>
-            <div className="col-span-3 px-4 py-2 bg-white rounded-md">KMS</div>
+            <div className="col-span-3 bg-white rounded-md">
+              <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
+                Insert Cool Project
+              </p>
+              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
+                Lorem ipsum dolor sit amet,
+              </p>
+            </div>
+          </div>
+          <div className="grid place-items-center">
+            <IconContext.Provider
+              value={{
+                size: "1rem",
+                className: "ml-2 inline-block align-middle",
+              }}
+            >
+              <Link href="https://github.com/Vincent-Cayadi?tab=repositories">
+                <a className="inline-block px-8 py-2 my-4 text-base font-semibold duration-300 bg-white rounded-md text-slate-800 sm:hover:scale-105">
+                  View More
+                  <BsArrowUpRight />
+                </a>
+              </Link>
+            </IconContext.Provider>
           </div>
         </div>
       </div>
@@ -86,7 +116,7 @@ export default function Home() {
                   <Link href="https://www.github.com/Vincent-Cayadi">
                     <div>
                       <FiGithub />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         My Github Page
                       </a>
                     </div>
@@ -96,7 +126,7 @@ export default function Home() {
                   <Link href="https://discord.com/users/678790092000854017">
                     <div>
                       <SiDiscord />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         Chat On Discord
                       </a>
                     </div>
@@ -106,7 +136,7 @@ export default function Home() {
                   <Link href="https://www.instagram.com/vincentcayadi/">
                     <div>
                       <FaInstagram />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         Follow Me On Insta
                       </a>
                     </div>
@@ -116,7 +146,7 @@ export default function Home() {
                   <Link href="https://www.ko-fi.com/vincentcayadi">
                     <div>
                       <FiCoffee />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         Support Me On KoFi
                       </a>
                     </div>
