@@ -95,6 +95,7 @@ export default function Home() {
                   href="https://www.instagram.com/vincentcayadi/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FaInstagram />
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
@@ -105,9 +106,10 @@ export default function Home() {
                   href="https://www.github.com/Vincent-Cayadi"
                   target="_blank"
                   rel="noopner noreferrer"
+                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FiGithub />
-                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
                     View My Github Page
                   </a>
                 </a>
@@ -115,6 +117,7 @@ export default function Home() {
                   href="https://discord.com/users/678790092000854017"
                   target="_blank"
                   rel="noopner noreferrer"
+                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <SiDiscord />
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
@@ -125,6 +128,7 @@ export default function Home() {
                   href="https://www.ko-fi.com/vincentcayadi"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FiCoffee />
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
@@ -141,7 +145,7 @@ export default function Home() {
                   id="fname"
                   name="name"
                   placeholder="Joe Bloggs"
-                  className="block w-full p-2 mb-6 border border-gray-300 rounded-md"
+                  className="block w-full p-2 mb-6 duration-300 border-2 border-gray-300 rounded-md sm:hover:border-gray-400"
                 />
                 <label className="block mb-2">Email Address:</label>
                 <input
@@ -149,14 +153,14 @@ export default function Home() {
                   id="femail"
                   name="address"
                   placeholder="joebloggs@gmail.com"
-                  className="block w-full p-2 mb-6 border border-gray-300 rounded-md"
+                  className="block w-full p-2 mb-6 duration-300 border-2 border-gray-300 rounded-md sm:hover:border-gray-400"
                 />
                 <label className="block mb-2">Subject:</label>
                 <textarea
                   id="subject"
                   name="subject"
                   placeholder="Write something..."
-                  className="w-full p-2 border border-gray-300 rounded-md h-1/6"
+                  className="w-full p-2 duration-300 border-2 border-gray-300 rounded-md h-1/6 sm:hover:border-gray-400"
                 ></textarea>
                 <div className="grid w-full place-content-end">
                   <button className="px-4 py-2 my-2 duration-300 bg-gray-300 border border-gray-300 rounded-md hover:bg-transparent">
