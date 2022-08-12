@@ -71,31 +71,49 @@ export default function Home() {
         <div className="grid w-3/4 p-8 mx-auto text-center bg-white rounded h-3/4 drop-shadow-lg place-items-center">
           <div className="grid w-full h-full grid-cols-2 text-center place-content-center">
             <div className="grid grid-cols-1 grid-rows-4 gap-2 sm:gap-6 sm:grid-cols-2 sm:grid-rows-2 place-items-center">
-              <IconContext.Provider value={{ className: "inline" }}>
-                <div>
+              <IconContext.Provider
+                value={{ size: "1.5rem", className: "inline" }}
+              >
+                <a
+                  href="https://www.instagram.com/vincentcayadi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram />
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Follow Me On Insta
                   </a>
-                </div>
-                <div>
+                </a>
+                <a
+                  href="https://www.github.com/Vincent-Cayadi"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
                   <FiGithub />
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     View My Github Page
                   </a>
-                </div>
-                <div>
+                </a>
+                <a
+                  href="https://discord.com/users/678790092000854017"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
                   <SiDiscord />
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Chat On Discord
                   </a>
-                </div>
-                <div>
+                </a>
+                <a
+                  href="https://www.ko-fi.com/vincentcayadi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FiCoffee />
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Support Me on Kofi
                   </a>
-                </div>
+                </a>
               </IconContext.Provider>
             </div>
             <div className="h-full bg-white rounded-md drop-shadow-lg">
