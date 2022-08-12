@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
             rel="stylesheet"
           />
         </Head>
-        <main className="subpixel-antialiased align-middle select-none font-manrope">
+        <main className="subpixel-antialiased select-none font-manrope">
           {children}
         </main>
       </div>

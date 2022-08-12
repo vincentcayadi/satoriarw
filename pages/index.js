@@ -15,7 +15,7 @@ export default function Home() {
             </h1>
             <div className="mt-6">
               <p className="text-xl sm:text-2xl">
-                Click on one of these links to start exploring
+                Interact with the links to start exploring
               </p>
               <p className="mt-4 duration-300 t text-l sm:text-xl sm:hover:scale-125 ">
                 <Link href="#projects">
@@ -76,7 +76,7 @@ export default function Home() {
       <div className="grid h-screen bg-gradient-to-b from-sky-500 to-cyan-500 place-items-center">
         <div className="grid w-2/3 p-8 mx-auto text-center bg-white rounded sm:w-1/2 h-1/2 drop-shadow-lg place-items-center">
           <div className="grid w-full h-full text-center place-content-center">
-            <h1 className="mb-2 text-xl font-bold underline sm:mb-8 sm:text-2xl">
+            <h1 className="mb-4 text-xl font-bold underline sm:mb-8 sm:text-2xl">
               Vincent Cayadi
             </h1>
             <div className="grid grid-cols-1 grid-rows-4 gap-2 sm:gap-6 sm:grid-cols-2 sm:grid-rows-2 place-items-center">
