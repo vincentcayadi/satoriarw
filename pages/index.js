@@ -5,32 +5,32 @@ export default function Home() {
   return (
     <>
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-blue-500 from-indigo-500">
-        <div className="w-1/2 mx-auto md:w-max">
-          <div className="inline-block md:mr-12">
-            <h1 className="text-2xl font-bold md:text-3xl text-slate-100">
+        <div className="w-1/2 mx-auto sm:w-max">
+          <div className="inline-block sm:mr-16 ">
+            <h1 className="text-2xl font-bold sm:text-3xl text-slate-100">
               Hi, I&apos;m Vincent
             </h1>
-            <h2 className="mt-2 text-base md:text-xl text-slate-200">
+            <h2 className="mt-2 text-base sm:text-xl text-slate-200">
               Robotics Engineer
             </h2>
-            <h2 className="mt-2 text-base md:text-xl text-slate-200">
+            <h2 className="mt-2 text-base sm:text-xl text-slate-200">
               Web Developer
             </h2>
-            <h2 className="mt-2 text-base md:text-xl text-slate-200">
+            <h2 className="mt-2 text-base sm:text-xl text-slate-200">
               Athelete
             </h2>
-            <p className="mt-2 text-base text-blue-100 duration-300 md:text-xl hover:translate-x-2">
+            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl hover:translate-x-2">
               <Link href="/blog">
                 <a>Read My Blog →</a>
               </Link>
             </p>
-            <p className="mt-2 text-base text-blue-100 duration-300 md:text-xl hover:translate-x-2">
+            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl hover:translate-x-2">
               <Link href="#projects">
                 <a>My Projects →</a>
               </Link>
             </p>
           </div>
-          <div className="inline-block align-top">
+          <div className="inline-block mt-2 align-top sm:mt-0">
             <Image
               src="https://avatars.githubusercontent.com/u/57314503?v=4"
               width={240}
@@ -56,9 +56,9 @@ export default function Home() {
         </div>
       </div>
       <div className="grid h-screen bg-cyan-500 place-items-center">
-        <div className="grid w-1/2 p-2 mx-auto text-center bg-white rounded-md h-1/2 drop-shadow-lg place-items-center">
+        <div className="grid w-1/2 p-2 mx-auto text-center bg-white rounded-sm h-1/2 drop-shadow-lg place-items-center">
           <div>
-            <button className="block p-2 mb-4 font-bold border-2 border-black rounded-md text-l">
+            <button className="block p-2 mb-4 font-bold border-2 border-black rounded-sm text-l">
               Download My Resume
             </button>
             <button className="text-base font-bold animate-bounce">
