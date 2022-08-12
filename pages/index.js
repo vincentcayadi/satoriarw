@@ -10,30 +10,24 @@ export default function Home() {
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto sm:w-max">
           <div className="inline-block sm:mr-16 ">
-            <h1 className="text-2xl font-bold sm:text-3xl text-slate-100">
+            <h1 className="text-2xl font-bold text-purple-100 underline sm:text-3xl underline-offset-2">
               Hi, I&apos;m Vincent
             </h1>
-            <div className="mt-10">
-              <p className="text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
+            <div className="mt-4">
+              <p className="text-purple-100 text-l sm:text-xl font-firacode">
+                Welcome, click on one of these links to start exploring
+              </p>
+              <p className="mt-2 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 font-firacode">
                 <Link href="#projects">
                   <a>My Projects →</a>
                 </Link>
               </p>
-              <p className="mt-2 text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
+              <p className="mt-2 text-purple-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2 font-firacode">
                 <Link href="#about">
                   <a>About Me →</a>
                 </Link>
               </p>
             </div>
-          </div>
-          <div className="invisible inline-block mt-4 align-top sm:mt-0 sm:visible">
-            <Image
-              src="https://avatars.githubusercontent.com/u/57314503?v=4"
-              width={240}
-              height={240}
-              alt="pfp"
-              className="rounded-2xl"
-            ></Image>
           </div>
         </div>
       </div>
@@ -86,7 +80,7 @@ export default function Home() {
               <IconContext.Provider
                 value={{ size: "1.5rem", className: "inline-block" }}
               >
-                <a
+                <div
                   href="https://www.instagram.com/vincentcayadi/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -96,8 +90,8 @@ export default function Home() {
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Follow Me On Insta
                   </a>
-                </a>
-                <a
+                </div>
+                <div
                   href="https://www.github.com/Vincent-Cayadi"
                   target="_blank"
                   rel="noopner noreferrer"
@@ -107,8 +101,8 @@ export default function Home() {
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
                     View My Github Page
                   </a>
-                </a>
-                <a
+                </div>
+                <div
                   href="https://discord.com/users/678790092000854017"
                   target="_blank"
                   rel="noopner noreferrer"
@@ -118,8 +112,8 @@ export default function Home() {
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Chat On Discord
                   </a>
-                </a>
-                <a
+                </div>
+                <div
                   href="https://www.ko-fi.com/vincentcayadi"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -129,7 +123,7 @@ export default function Home() {
                   <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Support Me on Kofi
                   </a>
-                </a>
+                </div>
               </IconContext.Provider>
             </div>
             <div className="h-full mt-4 bg-white rounded-md drop-shadow-2xl sm:mt-0">
