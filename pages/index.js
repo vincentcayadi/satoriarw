@@ -1,5 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaInstagram } from "react-icons/fa";
+import { SiDiscord } from "react-icons/si";
+import { IconContext } from "react-icons";
+import { FiGithub, FiCoffee } from "react-icons/fi";
 export default function Home() {
   return (
     <>
@@ -64,14 +68,70 @@ export default function Home() {
         </div>
       </div>
       <div className="grid h-screen bg-gradient-to-b from-sky-500 to-cyan-500 place-items-center">
-        <div className="grid w-1/2 p-2 mx-auto text-center bg-white rounded h-1/2 drop-shadow-lg place-items-center">
-          <div>
-            <button className="block p-2 mb-4 font-bold border-2 border-black rounded-sm text-l">
-              Download My Resume
-            </button>
-            <button className="text-base font-bold animate-bounce">
-              Turn me over
-            </button>
+        <div className="grid w-3/4 p-8 mx-auto text-center bg-white rounded h-3/4 drop-shadow-lg place-items-center">
+          <div className="grid w-full h-full grid-cols-2 text-center place-content-center">
+            <div className="grid grid-cols-1 grid-rows-4 gap-2 sm:gap-6 sm:grid-cols-2 sm:grid-rows-2 place-items-center">
+              <IconContext.Provider
+                value={{ size: "1.5rem", className: "inline" }}
+              >
+                <div>
+                  <FaInstagram />
+                  <a className="inline p-2 text-sm align-middle sm:text-xl">
+                    Follow Me On Insta
+                  </a>
+                </div>
+                <div>
+                  <FiGithub />
+                  <a className="inline p-2 text-sm align-middle sm:text-xl">
+                    View My Github Page
+                  </a>
+                </div>
+                <div>
+                  <SiDiscord />
+                  <a className="inline p-2 text-sm align-middle sm:text-xl">
+                    Chat On Discord
+                  </a>
+                </div>
+                <div>
+                  <FiCoffee />
+                  <a className="inline p-2 text-sm align-middle sm:text-xl">
+                    Support Me on Kofi
+                  </a>
+                </div>
+              </IconContext.Provider>
+            </div>
+            <div className="h-full bg-white rounded-md drop-shadow-lg">
+              <form method="POST" className="p-4 text-left">
+                <label className="block mb-2">Your Name:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="name"
+                  placeholder="Joe Bloggs"
+                  className="block w-full p-2 mb-6 border border-gray-300 rounded-md"
+                />
+                <label className="block mb-2">Email Address:</label>
+                <input
+                  type="text"
+                  id="femail"
+                  name="address"
+                  placeholder="joebloggs@gmail.com"
+                  className="block w-full p-2 mb-6 border border-gray-300 rounded-md"
+                />
+                <label className="block mb-2">Subject</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something..."
+                  className="w-full p-2 border border-gray-300 rounded-md h-1/5"
+                ></textarea>
+                <div className="grid w-full place-content-end">
+                  <button className="px-4 py-2 my-2 duration-300 bg-gray-300 border border-gray-300 rounded-md hover:bg-transparent ">
+                    <a className="align-middle text-l">Send</a>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
