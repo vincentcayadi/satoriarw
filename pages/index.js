@@ -3,33 +3,31 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-blue-500 from-indigo-500">
+      <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto sm:w-max">
           <div className="inline-block sm:mr-16 ">
             <h1 className="text-2xl font-bold sm:text-3xl text-slate-100">
               Hi, I&apos;m Vincent
             </h1>
-            <h2 className="mt-2 text-base sm:text-xl text-slate-200">
-              Robotics Engineer
-            </h2>
-            <h2 className="mt-2 text-base sm:text-xl text-slate-200">
-              Web Developer
-            </h2>
-            <h2 className="mt-2 text-base sm:text-xl text-slate-200">
-              Athelete
-            </h2>
-            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl sm:hover:translate-x-2">
-              <Link href="/blog">
-                <a>Read My Blog →</a>
-              </Link>
-            </p>
-            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl sm:hover:translate-x-2">
-              <Link href="#projects">
-                <a>My Projects →</a>
-              </Link>
-            </p>
+            <div className="mt-4">
+              <p className="mt-2 text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
+                <Link href="/blog">
+                  <a>Read My Blog →</a>
+                </Link>
+              </p>
+              <p className="mt-2 text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
+                <Link href="#projects">
+                  <a>My Projects →</a>
+                </Link>
+              </p>
+              <p className="mt-2 text-blue-100 duration-300 text-l sm:text-xl sm:hover:translate-x-2">
+                <Link href="#about">
+                  <a>About Me →</a>
+                </Link>
+              </p>
+            </div>
           </div>
-          <div className="inline-block mt-4 align-top sm:mt-0">
+          <div className="invisible inline-block mt-4 align-top sm:mt-0 sm:visible">
             <Image
               src="https://avatars.githubusercontent.com/u/57314503?v=4"
               width={240}
@@ -39,6 +37,14 @@ export default function Home() {
             ></Image>
           </div>
         </div>
+      </div>
+      <div
+        className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
+        id="about"
+      >
+        <h1 className="mb-4 text-3xl font-bold text-center text-slate-100">
+          About Me
+        </h1>
       </div>
       <div
         className="grid h-screen place-items-center from-blue-500 to-cyan-500 bg-gradient-to-b"
