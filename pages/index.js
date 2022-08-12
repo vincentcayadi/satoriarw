@@ -74,89 +74,60 @@ export default function Home() {
         </div>
       </div>
       <div className="grid h-screen bg-gradient-to-b from-sky-500 to-cyan-500 place-items-center">
-        <div className="grid w-3/4 p-8 mx-auto text-center bg-white rounded h-3/4 drop-shadow-lg place-items-center">
-          <div className="grid w-full h-full grid-cols-1 text-center sm:grid-cols-2 place-content-center">
+        <div className="grid w-2/3 p-8 mx-auto text-center bg-white rounded sm:w-1/2 h-1/2 drop-shadow-lg place-items-center">
+          <div className="grid w-full h-full text-center place-content-center">
+            <h1 className="mb-2 text-xl font-bold underline sm:mb-8 sm:text-2xl">
+              Vincent Cayadi
+            </h1>
             <div className="grid grid-cols-1 grid-rows-4 gap-2 sm:gap-6 sm:grid-cols-2 sm:grid-rows-2 place-items-center">
               <IconContext.Provider
                 value={{ size: "1.5rem", className: "inline-block" }}
               >
                 <a
-                  href="https://www.instagram.com/vincentcayadi/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
-                >
-                  <FaInstagram />
-                  <a className="inline p-2 text-base sm:text-l md:text-xl">
-                    Follow Me On Insta
-                  </a>
-                </a>
-                <a
                   href="https://www.github.com/Vincent-Cayadi"
                   target="_blank"
                   rel="noopner noreferrer"
-                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
+                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FiGithub />
-                  <a className="inline p-2 text-base sm:text-l md:text-xl ">
-                    View My Github Page
+                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl ">
+                    My Github Page
                   </a>
                 </a>
                 <a
                   href="https://discord.com/users/678790092000854017"
                   target="_blank"
                   rel="noopner noreferrer"
-                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
+                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <SiDiscord />
-                  <a className="inline p-2 text-base sm:text-l md:text-xl">
+                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Chat On Discord
+                  </a>
+                </a>
+                <a
+                  href="https://www.instagram.com/vincentcayadi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
+                >
+                  <FaInstagram />
+                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                    Follow Me On Insta
                   </a>
                 </a>
                 <a
                   href="https://www.ko-fi.com/vincentcayadi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-1 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
+                  className="p-2 duration-500 border-b-2 border-transparent hover:border-b-2 sm:hover:border-gray-200"
                 >
                   <FiCoffee />
-                  <a className="inline p-2 text-base sm:text-l md:text-xl">
+                  <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                     Support Me on Kofi
                   </a>
                 </a>
               </IconContext.Provider>
-            </div>
-            <div className="h-full mt-4 bg-white rounded-md drop-shadow-2xl sm:mt-0">
-              <form method="POST" className="p-4 text-left">
-                <label className="block mb-2">Your Name:</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="name"
-                  placeholder="Joe Bloggs"
-                  className="block w-full p-2 mb-6 duration-300 border-2 border-gray-300 rounded-md sm:hover:border-gray-400"
-                />
-                <label className="block mb-2">Email Address:</label>
-                <input
-                  type="text"
-                  id="femail"
-                  name="address"
-                  placeholder="joebloggs@gmail.com"
-                  className="block w-full p-2 mb-6 duration-300 border-2 border-gray-300 rounded-md sm:hover:border-gray-400"
-                />
-                <label className="block mb-2">Subject:</label>
-                <textarea
-                  id="subject"
-                  name="subject"
-                  placeholder="Write something..."
-                  className="w-full p-2 duration-300 border-2 border-gray-300 rounded-md h-1/6 sm:hover:border-gray-400"
-                ></textarea>
-                <div className="grid w-full place-content-end">
-                  <button className="px-4 py-2 my-2 duration-300 bg-gray-300 border border-gray-300 rounded-md hover:bg-transparent">
-                    <a className=" text-l">Send</a>
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
