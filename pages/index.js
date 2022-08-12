@@ -47,7 +47,7 @@ export default function Home() {
         </h1>
       </div>
       <div
-        className="grid h-screen place-items-center from-blue-500 to-cyan-500 bg-gradient-to-b"
+        className="grid h-screen place-items-center from-blue-500 to-sky-500 bg-gradient-to-b"
         id="projects"
       >
         <div>
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="grid h-screen bg-cyan-500 place-items-center">
+      <div className="grid h-screen bg-gradient-to-b from-sky-500 to-cyan-500 place-items-center">
         <div className="grid w-1/2 p-2 mx-auto text-center bg-white rounded h-1/2 drop-shadow-lg place-items-center">
           <div>
             <button className="block p-2 mb-4 font-bold border-2 border-black rounded-sm text-l">
