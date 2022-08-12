@@ -9,27 +9,24 @@ export default function Home() {
   return (
     <>
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
-        <div className="w-3/4 mx-auto text-center text-purple-100 sm:w-max">
+        <div className="w-3/4 mx-auto text-left text-purple-100 sm:w-max">
           <div>
-            <h1 className="text-2xl font-semibold 
-sm:text-3xl">
-              Hi,
-            </h1>
+            <h1 className="text-2xl font-semibold sm:text-3xl">Hi,</h1>
             <h1 className="text-3xl font-bold sm:text-4xl">
               I&apos;m Vincent Cayadi
             </h1>
-            <div className="mt-6">
+            <div className="mt-2">
               <p className="text-xl sm:text-2xl">
                 Click on the links to start exploring
               </p>
-              <p className="mt-2 text-base text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125">
+              <p className="mt-2 text-base text-purple-100 duration-300 sm:text-xl sm:hover:translate-x-2">
                 <Link href="#projects">
-                  <a>My Projects</a>
+                  <a>My Projects →</a>
                 </Link>
               </p>
-              <p className="mt-2 text-base text-purple-100 duration-300 sm:mt-4 sm:text-xl sm:hover:scale-125 ">
+              <p className="mt-2 text-base text-purple-100 duration-300 sm:text-xl sm:hover:translate-x-2 ">
                 <Link href="#about">
-                  <a>About Me</a>
+                  <a>About Me →</a>
                 </Link>
               </p>
             </div>
@@ -40,7 +37,7 @@ sm:text-3xl">
         className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
-        <div className="grid grid-cols-1 gap-0 sm:gap-8 text-left sm:grid-cols-2 text-slate-100">
+        <div className="grid grid-cols-1 gap-0 text-left sm:gap-8 sm:grid-cols-2 text-slate-100">
           <div>
             <h1 className="mb-4 text-3xl font-bold">About Me</h1>
             <h2 className="mt-4 text-xl">Robotics Enginner</h2>
