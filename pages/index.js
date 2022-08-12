@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { SiDiscord } from "react-icons/si";
 import { IconContext } from "react-icons";
@@ -35,11 +36,25 @@ export default function Home() {
         className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
-        <div className="text-center text-slate-100">
-          <h1 className="mb-4 text-3xl font-bold">About Me</h1>
-          <p className="text-xl">Robotics Enginner</p>
-          <p className="text-xl">Web Developer</p>
-          <p className="text-xl">Athlete</p>
+        <div className="grid grid-cols-1 gap-8 text-left sm:grid-cols-2 text-slate-100">
+          <div>
+            <h1 className="mb-4 text-3xl font-bold">About Me</h1>
+            <h2 className="mt-2 text-xl">Robotics Enginner</h2>
+            <p>I make Robots for fun</p>
+            <h2 className="mt-2 text-xl">Web Developer</h2>
+            <p>I like to make websites</p>
+            <h2 className="mt-2 text-xl">Athlete</h2>
+            <p>I like doing sports</p>
+          </div>
+          <div className="mt-4 sm:mt-0">
+            <Image
+              src="https://avatars.githubusercontent.com/u/57314503?v=4"
+              width={240}
+              height={240}
+              alt="pfp"
+              className="rounded-2xl"
+            />
+          </div>
         </div>
       </div>
       <div
