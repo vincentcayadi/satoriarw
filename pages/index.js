@@ -19,18 +19,18 @@ export default function Home() {
             <h2 className="mt-2 text-base sm:text-xl text-slate-200">
               Athelete
             </h2>
-            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl hover:translate-x-2">
+            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl sm:hover:translate-x-2">
               <Link href="/blog">
                 <a>Read My Blog →</a>
               </Link>
             </p>
-            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl hover:translate-x-2">
+            <p className="mt-2 text-base text-blue-100 duration-300 sm:text-xl sm:hover:translate-x-2">
               <Link href="#projects">
                 <a>My Projects →</a>
               </Link>
             </p>
           </div>
-          <div className="inline-block mt-2 align-top sm:mt-0">
+          <div className="inline-block mt-4 align-top sm:mt-0">
             <Image
               src="https://avatars.githubusercontent.com/u/57314503?v=4"
               width={240}
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
       <div className="grid h-screen bg-cyan-500 place-items-center">
-        <div className="grid w-1/2 p-2 mx-auto text-center bg-white rounded-sm h-1/2 drop-shadow-lg place-items-center">
+        <div className="grid w-1/2 p-2 mx-auto text-center bg-white rounded h-1/2 drop-shadow-lg place-items-center">
           <div>
             <button className="block p-2 mb-4 font-bold border-2 border-black rounded-sm text-l">
               Download My Resume
