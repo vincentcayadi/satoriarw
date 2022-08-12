@@ -11,7 +11,7 @@ export default function Home() {
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-center text-purple-100 sm:w-max">
           <div>
-            <h1 className="text-xl font-bold sm:text-2xl">
+            <h1 className="text-2xl font-bold text-left sm:text-3xl">
               Hi,
             </h1>
             <h1 className="text-3xl font-bold sm:text-4xl">
