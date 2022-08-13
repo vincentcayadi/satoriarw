@@ -47,11 +47,11 @@ export default function Home() {
             <h2 className="mt-2 text-lg sm:text-xl">Web Developer</h2>
             <h2 className="mt-2 text-lg sm:text-xl">Athlete</h2>
           </div>
-          <div className="mt-4 sm:mt-0">
+          <div className="mt-4 sm:grid sm:mt-0 sm:place-items-center">
             <Image
               src="https://avatars.githubusercontent.com/u/57314503?v=4"
-              width={240}
-              height={240}
+              width={256}
+              height={256}
               alt="pfp"
               className="rounded-xl"
             />
