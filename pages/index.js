@@ -13,7 +13,7 @@ export default function Home() {
         <title>Vincent Cayadi</title>
         <meta name="description" content="Vincent Cayadi Portfolio Site" />
       </Head>
-      <section className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
+      <section className="grid w-full h-screen mx-auto font-manrope place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-left text-purple-100 sm:w-max">
           <div>
             <h1 className="text-xl font-semibold sm:text-2xl">Hi,</h1>
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
+        className="grid h-screen font-manrope place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
         <div className="grid w-3/4 grid-cols-1 gap-0 text-left sm:w-max sm:gap-10 sm:grid-cols-2 text-slate-100">
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="grid w-full h-screen place-items-center from-blue-500 to-sky-500 bg-gradient-to-b"
+        className="grid w-full h-screen font-manrope place-items-center from-blue-500 to-sky-500 bg-gradient-to-b"
         id="projects"
       >
         <div className="w-3/4 sm:w-2/3">
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="grid h-screen bg-gradient-to-b from-sky-500 to-cyan-500 place-items-center">
+      <section className="grid h-screen font-manrope bg-gradient-to-b from-sky-500 to-cyan-500 place-items-center">
         <div className="grid w-2/3 p-8 mx-auto text-center bg-white rounded sm:w-1/2 h-1/2 drop-shadow-lg place-items-center">
           <div className="grid w-full h-full text-center place-content-center">
             <h1 className="mb-4 text-xl font-bold underline sm:mb-8 sm:text-2xl">
