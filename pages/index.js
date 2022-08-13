@@ -112,9 +112,9 @@ export default function Home() {
                   <Link href="https://www.github.com/Vincent-Cayadi">
                     <div>
                       <FiGithub />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                      <p className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         My Github Page
-                      </a>
+                      </p>
                     </div>
                   </Link>
                 </div>
@@ -122,9 +122,9 @@ export default function Home() {
                   <Link href="https://discord.com/users/678790092000854017">
                     <div>
                       <SiDiscord />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                      <p className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         Chat On Discord
-                      </a>
+                      </p>
                     </div>
                   </Link>
                 </div>
@@ -132,9 +132,9 @@ export default function Home() {
                   <Link href="https://www.instagram.com/vincentcayadi/">
                     <div>
                       <FaInstagram />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                      <p className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         Follow Me On Insta
-                      </a>
+                      </p>
                     </div>
                   </Link>
                 </div>
@@ -142,9 +142,9 @@ export default function Home() {
                   <Link href="https://www.ko-fi.com/vincentcayadi">
                     <div>
                       <FiCoffee />
-                      <a className="inline p-2 text-base align-middle sm:text-l md:text-xl">
+                      <p className="inline p-2 text-base align-middle sm:text-l md:text-xl">
                         Support Me On KoFi
-                      </a>
+                      </p>
                     </div>
                   </Link>
                 </div>
