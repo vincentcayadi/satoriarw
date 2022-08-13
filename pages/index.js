@@ -34,10 +34,10 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-3/4 grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b sm:w-max"
+        className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
-        <div className="grid grid-cols-1 gap-0 text-left sm:gap-8 sm:grid-cols-2 text-slate-100">
+        <div className="w-3/4 sm:w-max grid grid-cols-1 gap-0 text-left sm:gap-8 sm:grid-cols-2 text-slate-100">
           <div>
             <h1 className="text-3xl font-bold">About Me</h1>
             <h2 className="mt-6 text-xl">Robotics Enginner</h2>
