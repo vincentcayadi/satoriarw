@@ -16,5 +16,5 @@ module.exports = {
       firacode: ["Fira Code", "monospace"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
