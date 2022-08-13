@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className="mt-4 sm:grid sm:mt-0 sm:place-items-center">
             <Image
-              src="https://avatars.githubusercontent.com/u/57314503?v=4"
+              src="/1.jpg"
               width={256}
               height={256}
               alt="pfp"
