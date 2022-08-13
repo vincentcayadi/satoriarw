@@ -16,7 +16,7 @@ export default function Home() {
       <section className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-left text-purple-100 sm:w-max">
           <div>
-            <h1 className="text-2xl font-semibold sm:text-3xl">Hi,</h1>
+            <h1 className="text-xl font-semibold sm:text-2xl">Hi,</h1>
             <h1 className="text-3xl font-bold sm:text-4xl">
               I&apos;m Vincent Cayadi
             </h1>
