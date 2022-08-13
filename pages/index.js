@@ -15,6 +15,7 @@ export default function Home() {
           name="name"
           content="vincent,vincentcayadi,cayadi,cayadivincent,web development, programming, student, athlete, swimmer, github, discord, developer, learner, engineer, mechanical engineer, mechanical engineering, electrical, electrical engineer, electrical engineering"
         ></meta>
+        <meta name="description" content="My Portfolio" />
       </Head>
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-left text-purple-100 sm:w-max">
@@ -79,7 +80,7 @@ export default function Home() {
               <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
                 Robocup Junior Soccer
               </p>
-              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
+              <p className="inline-block px-4 py-2 text-sm text-right text-gray-500">
                 AutoCAD, Fusion 360, Altium Designer
               </p>
             </div>
@@ -87,7 +88,7 @@ export default function Home() {
               <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
                 BlockVault
               </p>
-              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
+              <p className="inline-block px-4 py-2 text-sm text-right text-gray-500">
                 React, TailWindCSS, Moralis
               </p>
             </div>
