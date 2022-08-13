@@ -11,11 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Vincent Cayadi</title>
-        <meta
-          name="name"
-          content="vincent,vincentcayadi,cayadi,cayadivincent,web development, programming, student, athlete, swimmer, github, discord, developer, learner, engineer, mechanical engineer, mechanical engineering, electrical, electrical engineer, electrical engineering"
-        ></meta>
-        <meta name="description" content="My Portfolio" />
+        <meta name="description" content="Vincent Cayadi Portfolio Site" />
       </Head>
       <div className="grid w-full h-screen mx-auto place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-left text-purple-100 sm:w-max">
