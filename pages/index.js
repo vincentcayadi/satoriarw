@@ -37,13 +37,15 @@ export default function Home() {
         className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
-        <div className="w-3/4 sm:w-max grid grid-cols-1 gap-0 text-left sm:gap-10 sm:grid-cols-2 text-slate-100">
+        <div className="grid w-3/4 grid-cols-1 gap-0 text-left sm:w-max sm:gap-10 sm:grid-cols-2 text-slate-100">
           <div>
             <h1 className="text-3xl font-bold">About Me</h1>
-            <h2 className="mt-4">Avid Anime & Chemistry Enjoyer</h2>
-            <h2 className="mt-2 text-xl">Robotics Enginner</h2>
-            <h2 className="mt-2 text-xl">Web Developer</h2>
-            <h2 className="mt-2 text-xl">Athlete</h2>
+            <h2 className="mt-4 text-lg sm:text-xl">
+              Avid Anime & Chemistry Enjoyer
+            </h2>
+            <h2 className="mt-2 text-lg sm:text-xl">Robotics Enginner</h2>
+            <h2 className="mt-2 text-lg sm:text-xl">Web Developer</h2>
+            <h2 className="mt-2 text-lg sm:text-xl">Athlete</h2>
           </div>
           <div className="mt-4 sm:mt-0">
             <Image
@@ -51,7 +53,7 @@ export default function Home() {
               width={240}
               height={240}
               alt="pfp"
-              className="rounded-2xl"
+              className="rounded-xl"
             />
           </div>
         </div>
@@ -79,22 +81,6 @@ export default function Home() {
               </p>
               <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
                 React, TailWindCSS, Moralis
-              </p>
-            </div>
-            <div className="col-span-2 bg-white rounded-md">
-              <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
-                Insert Cool Project
-              </p>
-              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
-                Lorem ipsum dolor sit amet,
-              </p>
-            </div>
-            <div className="col-span-3 bg-white rounded-md">
-              <p className="inline-block px-4 py-2 text-sm text-left text-gray-800">
-                Insert Cool Project
-              </p>
-              <p className="inline-block px-4 py-2 text-sm text-right text-gray-400">
-                Lorem ipsum dolor sit amet,
               </p>
             </div>
           </div>
