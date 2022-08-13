@@ -37,13 +37,13 @@ export default function Home() {
         className="grid h-screen place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
         id="about"
       >
-        <div className="w-3/4 sm:w-max grid grid-cols-1 gap-0 text-left sm:gap-8 sm:grid-cols-2 text-slate-100">
+        <div className="w-3/4 sm:w-max grid grid-cols-1 gap-0 text-left sm:gap-10 sm:grid-cols-2 text-slate-100">
           <div>
             <h1 className="text-3xl font-bold">About Me</h1>
-            <h2 className="mt-6 text-xl">Robotics Enginner</h2>
+            <h2 className="mt-4">Avid Anime & Chemistry Enjoyer</h2>
+            <h2 className="mt-2 text-xl">Robotics Enginner</h2>
             <h2 className="mt-2 text-xl">Web Developer</h2>
             <h2 className="mt-2 text-xl">Athlete</h2>
-            <p className="mt-2">Avid Anime & Chemistry Enjoyer</p>
           </div>
           <div className="mt-4 sm:mt-0">
             <Image
