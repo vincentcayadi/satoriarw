@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Head>
         <title>Vincent Cayadi</title>
-        <meta name="description" content="Vincent Cayadi Portfolio Site" />
+        <meta name="description" content="Home | Vincent Cayadi" />
       </Head>
       <section className="grid w-full h-screen mx-auto select-none font-manrope place-items-center bg-gradient-to-b to-indigo-500 from-purple-500">
         <div className="w-3/4 mx-auto text-left text-purple-100 sm:w-max">
@@ -77,7 +77,7 @@ export default function Home() {
                 Robocup Junior Soccer
               </p>
               <p className="inline-block px-4 py-2 text-sm text-right text-gray-500">
-                AutoCAD, Fusion 360, Altium Designer
+                Made Robot that played soccer
               </p>
             </div>
             <div className="col-span-2 bg-white rounded-md">
@@ -85,7 +85,7 @@ export default function Home() {
                 BlockVault
               </p>
               <p className="inline-block px-4 py-2 text-sm text-right text-gray-500">
-                React, TailWindCSS, Moralis
+                Decentralized Application
               </p>
             </div>
             <div className="col-span-2 bg-white rounded-md">
@@ -93,7 +93,7 @@ export default function Home() {
                 Silk Road
               </p>
               <p className="inline-block px-4 py-2 text-sm text-right text-gray-500">
-                NextJS, TailWindCSS, Prism, Supabase
+                E-Commerce Store
               </p>
             </div>
           </div>
