@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      manrope: ["Manrope", "sans-serif"],
+      sans: ["Manrope", "sans-serif"],
     },
   },
   plugins: [require("@tailwindcss/typography")],
