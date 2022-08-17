@@ -1,20 +1,36 @@
 ---
+import BaseHead from "../components/BaseHead.astro";
+
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
 ---
 
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Blog | Vincent Cayadi" />
-    <title>Blog | Vincent Cayadi</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="w-full h-screen select-none">
-    <div class="grid place-items-center h-full">
-      <h1 class="font-bold text-xl">🚧Under Construction🚧</h1>
+  <BaseHead />
+  <body class="w-full h-screen select-none dark:bg-nero">
+    <div class="grid place-items-center h-full w-3/4 mx-auto">
+      <main>
+        {
+          posts.map((post) => (
+            <div class="text-xl border-b-2 border-nero dark:border-floral-white  text-floral-white p-2 m-2 hover:scale-110 duration-300">
+              <time datetime={post.frontmatter.pubDate} class="mx-2">
+                {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                  "en-us",
+                  {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  }
+                )}
+              </time>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </div>
+          ))
+        }
+      </main>
     </div>
   </body>
 </html>
