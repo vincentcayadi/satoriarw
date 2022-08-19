@@ -15,7 +15,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
       <main>
         {
           posts.map((post) => (
-            <div class="text-xl border-b-2 border-nero dark:border-floral-white text-floral-white p-2 m-2 hover:scale-110 duration-300">
+            <div class="text-xl border-b-2 border-nero dark:border-floral-white  text-floral-white p-2 m-2 hover:scale-110 duration-300">
               <time datetime={post.frontmatter.pubDate} class="mx-2">
                 {new Date(post.frontmatter.pubDate).toLocaleDateString(
                   "en-us",
