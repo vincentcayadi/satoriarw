@@ -25,10 +25,18 @@ const {
     class="dark:bg-nero text-nero bg-floral-white w-3/4 sm:w-1/2 mx-auto dark:text-floral-white align-middle h-screen"
   >
     <main>
-      <a class="text-sm my-8" href="/blog">Go Back</a>
-      <article>
-        {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-        <h1 class="text-2xl">{title}</h1>
+      <article class="m-8">
+        <a
+          class="text-sm border-2 dark:border-floral-white border-nero p-2 rounded-lg"
+          href="/blog"
+          >Go Back
+        </a>
+        {
+          heroImage && (
+            <img width={720} height={360} src={heroImage} alt="" class="mt-2" />
+          )
+        }
+        <h1 class="text-2xl mt-2">{title}</h1>
         {pubDate && <time>{pubDate}</time>}
         {
           updatedDate && (
