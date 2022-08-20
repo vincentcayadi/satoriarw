@@ -9,7 +9,7 @@ import BaseHead from "../components/BaseHead.astro";
   </BaseHead>
   <body class="w-full h-screen select-none">
     <section
-      class="h-full grid place-items-center bg-gradient-to-b to-indigo-500 from-purple-500"
+      class="relative h-full grid place-items-center bg-gradient-to-b to-indigo-500 from-purple-500"
     >
       <div class="w-3/4 mx-auto text-left text-purple-100 sm:w-max">
         <div>
@@ -40,6 +40,13 @@ import BaseHead from "../components/BaseHead.astro";
         </div>
       </div>
     </section>
+    <div class="absolute bottom-2 grid place-items-center w-full">
+      <p
+        class="text-center mx-auto animate-bounce duration-200 text-purple-100 text-sm sm:text-lg"
+      >
+        Scroll down
+      </p>
+    </div>
     <section
       class="grid h-full place-items-center from-indigo-500 to-blue-500 bg-gradient-to-b"
       id="about"
