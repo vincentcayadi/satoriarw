@@ -356,6 +356,11 @@
   "resolved" "https://registry.npmjs.org/@emmetio/scanner/-/scanner-1.0.0.tgz"
   "version" "1.0.0"
 
+"@fontsource/manrope@^4.5.11":
+  "integrity" "sha512-YOdZShn/ply0nKcMYZF4ggrNQD7cDsq6aJ8QkjiA1WVXn6ztD1x7XMd538wEqF+Er+22d00dilEDqpVPFU0FjQ=="
+  "resolved" "https://registry.npmjs.org/@fontsource/manrope/-/manrope-4.5.11.tgz"
+  "version" "4.5.11"
+
 "@jridgewell/gen-mapping@^0.1.0":
   "integrity" "sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w=="
   "resolved" "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz"

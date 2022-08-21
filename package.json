@@ -14,5 +14,8 @@
     "@astrojs/tailwind": "^1.0.0",
     "astro": "^1.0.6",
     "prettier-plugin-astro": "^0.5.0"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^4.5.11"
   }
 }
