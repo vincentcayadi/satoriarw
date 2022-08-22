@@ -10,6 +10,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Manrope", "sans-serif"],
+      mono: ["Fira Code", "monospace"],
     },
   },
   plugins: [],
