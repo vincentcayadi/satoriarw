@@ -9,7 +9,11 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
 ---
 
 <html lang="en">
-  <BaseHead />
+  <head>
+    <BaseHead />
+    <meta name="description" content="Blog | Vincent Cayadi" />
+    <title>Blog | Vincent Cayadi</title>
+  </head>
   <body class="w-full h-screen select-none dark:bg-nero">
     <div class="grid place-items-center h-full w-3/4 mx-auto">
       <main>
