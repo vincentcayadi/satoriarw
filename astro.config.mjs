@@ -5,5 +5,5 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), image()],
-  site: "https://Vincent-Cayadi.github.io",
+  site: "https://vincentcayadi.github.io",
 });
