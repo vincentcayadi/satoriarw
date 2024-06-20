@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import bannerImage from "@/images/heroImage/gallery.jpg";
+---
+
+<Layout title="Gallery | satorishoots_">
+  <main>
+    <section class="relative text-center">
+      <Image src={bannerImage} alt="Image" class="bg-fixed object-cover" />
+      <h1
+        class="text-6xl text-white font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      >
+        Gallery
+      </h1>
+    </section>
+    <section
+      class="container w-full grid gap-4 grid-cols-1 md:grid-cols-2 grid-rows-2 h-full mt-12 text-center text-xl"
+    >
+      <div>Wildlife</div>
+      <div>Automotive</div>
+      <div>Street</div>
+      <div>Sports</div>
+    </section>
+  </main>
+</Layout>

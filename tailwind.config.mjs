@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-
-const config = {
+module.exports = {
   darkMode: ["class"],
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{ts,tsx,astro,jsx}"],
   prefix: "",
   theme: {
     container: {
@@ -71,5 +70,3 @@ const config = {
   },
   plugins: [require("tailwindcss-animate")],
 };
-
-export default config;

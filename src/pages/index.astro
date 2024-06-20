@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import "@/styles/globals.css";
+import Carousel from "@/components/Carousel.jsx";
+import slides from "../data/carousel.json";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <div class="font-bold text-white">FUCK</div>
-  </main>
+<Layout title="Home | satorishoots">
+  <div class="aspect-video">
+    <Carousel client:visible>
+      {slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
+    </Carousel>
+  </div>
 </Layout>

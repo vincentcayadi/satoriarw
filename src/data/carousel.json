@@ -1,0 +1,10 @@
+[
+  {
+    "url": "src/images/carousel/carousel1.jpg",
+    "alt_text": "First image"
+  },
+  {
+    "url": "src/images/carousel/carousel2.jpg",
+    "alt_text": "Second image"
+  }
+]
