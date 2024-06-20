@@ -8,6 +8,8 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    react(),
+    react({
+      experimentalReactChildren: true,
+    }),
   ],
 });
