@@ -1,0 +1,31 @@
+---
+import { Separator } from "@/components/ui/separator";
+import { InstagramIcon, CoffeeIcon } from "astro-feather";
+---
+
+<footer
+  class="w-5/6 h-36 md:h-48 m-auto flex justify-evenly md:justify-between items-left md:items-center flex-col-reverse md:flex-row"
+>
+  <div class="space-y-2 md:space-y-4">
+    <div class="text-primary text-lg">
+      ©{new Date().getFullYear()} satori.arw
+    </div>
+    <div
+      class="flex h-5 items-center space-x-4 text-muted-foreground text-sm md:text-base"
+    >
+      <div>Downloads</div>
+      <Separator orientation="vertical" />
+      <div>Terms</div>
+      <Separator orientation="vertical" />
+      <div>Privacy Policy</div>
+    </div>
+  </div>
+  <div class="flex space-x-4 justify-start">
+    <a>
+      <InstagramIcon />
+    </a>
+    <a>
+      <CoffeeIcon />
+    </a>
+  </div>
+</footer>
