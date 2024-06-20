@@ -4,10 +4,10 @@ import Carousel from "@/components/Carousel.jsx";
 import slides from "../data/carousel.json";
 ---
 
-<Layout title="Home | satorishoots">
-  <div class="aspect-video">
+<Layout title="Home | satori.arw">
+  <section class="aspect-video select-none ">
     <Carousel client:visible>
       {slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
     </Carousel>
-  </div>
+  </section>
 </Layout>
