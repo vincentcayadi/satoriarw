@@ -32,8 +32,13 @@ import { ViewTransitions } from "astro:transitions";
       attributeFilter: ["class"],
     });
   }
-</script>
 
+  // Add this block
+  document.addEventListener("astro:after-swap", () => {
+    const isDark = getThemePreference() === "dark";
+    document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+  });
+</script>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

@@ -5,9 +5,34 @@ import slides from "../data/carousel.json";
 ---
 
 <Layout title="Home | satori.arw">
-  <section class="aspect-video select-none ">
-    <Carousel client:visible>
-      {slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
-    </Carousel>
-  </section>
+  <main>
+    <section class="aspect-video select-none">
+      <Carousel client:visible>
+        {slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
+      </Carousel>
+    </section>
+    <section
+      class="container mx-auto grid grid-col-reverse md:grid-cols-2 px-16 md:px-32 my-12 md:my-24 place-items-center"
+    >
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold text-left">Hey there!</h1>
+        <p class="text-base md:text-xl pt-6">
+          I dont have much to say but I go around the world and take cool
+          photos.
+        </p>
+        <p class="text-base md:text-xl pt-2">
+          I also other stuff like swimming, golfing etc. And P.S this website
+          was made by hand by me! No sqaure space or wordpress pure raw coding.
+        </p>
+        <p class="text-base md:text-xl pt-2">
+          Feel free to roam around and check out my photos. If you got any
+          questions just shoot one to satorishoots_@gmail.com.
+        </p>
+
+        <p class="text-base md:text-xl pt-2">Enjoy your stay here!</p>
+        <p class="text-base md:text-xl pt-4">Vincent</p>
+      </div>
+      <div class="text-center order-first md:-order-first">No good photos</div>
+    </section>
+  </main>
 </Layout>
