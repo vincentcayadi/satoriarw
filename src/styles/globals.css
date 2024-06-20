@@ -35,6 +35,16 @@
     --radius: 0.5rem;
   }
 
+  :root {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+  }
+
+  :root::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
