@@ -1,22 +1,17 @@
 {
-  "name": "@example/minimal",
+  "name": "yes",
+  "type": "module",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
-  "devDependencies": {
-    "@astrojs/image": "^0.3.4",
-    "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.0.6",
-    "prettier-plugin-astro": "^0.5.0"
-  },
   "dependencies": {
-    "@fontsource/fira-code": "^4.5.11",
-    "@fontsource/manrope": "^4.5.11"
+    "astro": "^4.11.0",
+    "@astrojs/check": "^0.7.0",
+    "typescript": "^5.4.5"
   }
 }
