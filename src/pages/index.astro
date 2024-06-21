@@ -49,36 +49,35 @@ import { ArrowRight } from "react-feather";
       </div>
       <div class="mt-4 text-center sm:mx-auto sm:mt-0">
         <Image
-          src="/pfp.jpg"
-          width={256}
-          height={256}
+          src="../images/pfp.jpg"
+          inferSize
           alt="pfp"
-          class="rounded-xl"
+          class="w-48 h-48 rounded-xl md:w-72 md:h-72"
         />
       </div>
     </section>
-    <section class="relative my-12 select-none">
-      <Image src={galleryImage} alt="Image" class="object-cover bg-fixed" />
-      <div
-        class="absolute top-0 left-0 flex items-center justify-start w-full h-full px-6 bg-primary-foreground/30 md:px-24"
-      >
-        <a href="/gallery">
-          <h1
-            transition:name="gallery-title"
-            class="relative py-2 text-xl font-bold text-left duration-500 ease-out text-neutral-200 text-primary md:text-7xl hover:translate-x-4 group"
-          >
-            Gallery
-            <span>
-              <ArrowRight
-                className="inline-block w-4 h-4 opacity-0 md:w-10 md:h-10 duration-500 stroke-neutral-200 md:opacity-0 md:group-hover:opacity-100 ease-out"
-              />
-            </span>
-            <span
-              class="delay-150 absolute left-0 bottom-0 w-[calc(100%-2.5rem)] md:w-[calc(100%-3rem)] h-1 bg-neutral-200 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-out"
-            ></span>
-          </h1>
-        </a>
-      </div>
-    </section>
   </main>
+  <section class="relative my-12 select-none">
+    <Image src={galleryImage} alt="Image" class="object-cover bg-fixed" />
+    <div
+      class="absolute top-0 left-0 flex items-center justify-start w-full h-full px-6 bg-primary-foreground/30 md:px-24"
+    >
+      <a href="/gallery">
+        <h1
+          transition:name="gallery-title"
+          class="relative py-2 text-xl font-bold text-left duration-500 ease-out text-neutral-200 text-primary md:text-7xl hover:translate-x-4 group"
+        >
+          Gallery
+          <span>
+            <ArrowRight
+              className="inline-block w-4 h-4 opacity-0 md:w-10 md:h-10 duration-500 stroke-neutral-200 md:opacity-0 md:group-hover:opacity-100 ease-out"
+            />
+          </span>
+          <span
+            class="delay-150 absolute left-0 bottom-0 w-[calc(100%-2.5rem)] md:w-[calc(100%-3rem)] h-1 bg-neutral-200 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-out"
+          ></span>
+        </h1>
+      </a>
+    </div>
+  </section>
 </Layout>
