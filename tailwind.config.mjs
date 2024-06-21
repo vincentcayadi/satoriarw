@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       aspectRatio: {
         insta: "4 / 5",
+        camera: "2 / 3",
       },
       colors: {
         border: "hsl(var(--border))",

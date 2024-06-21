@@ -29,13 +29,13 @@ import galleryThumbnails from "@/data/gallery.json";
         <!-- Gallery Thumbnails -->
         {
           galleryThumbnails.map((thumbnail) => (
-            <div class="relative h-auto md:max-h-[50vh] aspect-insta group">
+            <div class="relative h-auto md:max-h-[50vh] aspect-camera group">
               <a href="#" target="_blank" rel="noopener noreferrer ">
                 <Image
                   src={thumbnail.url}
                   alt={thumbnail.name}
                   inferSize
-                  class="object-contain h-auto max-w-full transform bg-cover rounded-md md:w-full md:h-full hover:scale-110"
+                  class="object-contain h-auto max-w-full transform bg-cover rounded-md md:w-full md:h-full"
                 />
 
                 <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 ease-out rounded-md opacity-0 group-hover:opacity-100 bg-primary-foreground/60">
