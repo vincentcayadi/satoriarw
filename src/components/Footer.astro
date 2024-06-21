@@ -4,33 +4,33 @@ import { InstagramIcon, CoffeeIcon, GithubIcon } from "astro-feather";
 ---
 
 <footer
-  class="w-5/6 h-48 pb-12 mx-auto flex justify-evenly md:justify-between items-left md:items-center flex-col-reverse md:flex-row bottom-0 border-t"
+  class="bottom-0 flex flex-col-reverse w-5/6 h-48 pb-12 mx-auto border-t justify-evenly md:justify-between items-left md:items-center md:flex-row"
 >
   <div class="space-y-2 md:space-y-4">
-    <div class="text-primary text-base md:text-lg font-semibold">
+    <div class="text-base font-semibold text-primary md:text-lg">
       ©{new Date().getFullYear()} satori.arw
     </div>
     <div
-      class="flex h-5 items-center space-x-4 text-muted-foreground text-sm md:text-base"
+      class="flex items-center h-5 text-sm space-x-4 text-muted-foreground md:text-base"
     >
       <div>Terms</div>
       <Separator orientation="vertical" />
       <div>Privacy Policy</div>
     </div>
   </div>
-  <div class="flex space-x-4 justify-start">
+  <div class="flex justify-start space-x-4">
     <a
-      class="bg-primary-foreground p-2 hover:scale-110 duration-150 hover:-rotate-12 rounded-md"
+      class="p-2 bg-primary-foreground hover:scale-110 duration-150 hover:-rotate-12 rounded-md"
     >
       <InstagramIcon />
     </a>
     <a
-      class="bg-primary-foreground p-2 hover:scale-110 duration-150 hover:rotate-12 rounded-md"
+      class="p-2 bg-primary-foreground hover:scale-110 duration-150 hover:rotate-12 rounded-md"
     >
       <CoffeeIcon />
     </a>
     <a
-      class="bg-primary-foreground p-2 hover:scale-110 duration-150 hover:-rotate-12 rounded-md"
+      class="p-2 bg-primary-foreground hover:scale-110 duration-150 hover:-rotate-12 rounded-md"
     >
       <GithubIcon />
     </a>
