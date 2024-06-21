@@ -18,22 +18,23 @@ import galleryThumbnails from "@/data/gallery.json";
         </h1>
       </div>
     </section>
-    <section
-      class="container my-12 text-xl text-center"
-    >
+    <section class="container my-12 text-xl text-center">
       <p class="pb-8">
         Here are some of the photos I've taken over the years. Hover to view the
         categories
       </p>
-      <div class="flex flex-col space-y-4 md:space-x-4 md:space-y-0 md:justify-evenly md:flex-row">
+      <div
+        class="flex flex-col space-y-4 md:space-x-4 md:space-y-0 md:justify-evenly md:flex-row"
+      >
         <!-- Gallery Thumbnails -->
         {
           galleryThumbnails.map((thumbnail) => (
             <div class="relative h-auto md:max-h-[50vh] aspect-insta group">
               <a href="#" target="_blank" rel="noopener noreferrer ">
-                <img
+                <Image
                   src={thumbnail.url}
                   alt={thumbnail.name}
+                  inferSize
                   class="object-contain h-auto max-w-full transform bg-cover rounded-md md:w-full md:h-full hover:scale-110"
                 />
 
