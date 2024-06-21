@@ -20,7 +20,7 @@ import { ArrowRight } from "react-feather";
   <main>
     <section class="relative select-none">
       <Carousel client:visible>
-        {slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
+        {slides && slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
       </Carousel>
       <div class="absolute top-0 left-0 w-full h-full bg-primary-foreground/40">
         <h1
