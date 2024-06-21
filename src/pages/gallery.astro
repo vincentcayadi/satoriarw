@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import bannerImage from "@/images/heroImage/gallery.jpg";
+import galleryThumbnails from "@/data/gallery.json";
 ---
 
 <Layout title="Gallery | satori.arw">
@@ -10,7 +11,7 @@ import bannerImage from "@/images/heroImage/gallery.jpg";
       <Image src={bannerImage} alt="Image" class="object-cover bg-fixed" />
       <div class="absolute top-0 left-0 w-full h-full bg-primary-foreground/40">
         <h1
-          class="absolute text-2xl font-bold text-white md:text-8xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="absolute text-2xl font-bold text-white transform -translate-x-1/2 -translate-y-1/2 md:text-8xl top-1/2 left-1/2"
           transition:name="gallery-title"
         >
           Gallery
@@ -18,12 +19,32 @@ import bannerImage from "@/images/heroImage/gallery.jpg";
       </div>
     </section>
     <section
-      class="container w-full h-screen mt-12 text-xl text-center grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4"
+      class="container my-12 text-xl text-center"
     >
-      <div>Wildlife</div>
-      <div>Automotive</div>
-      <div>Street</div>
-      <div>Sports</div>
+      <p class="pb-8">
+        Here are some of the photos I've taken over the years. Hover to view the
+        categories
+      </p>
+      <div class="flex flex-col space-y-4 md:space-x-4 md:space-y-0 md:justify-evenly md:flex-row">
+        <!-- Gallery Thumbnails -->
+        {
+          galleryThumbnails.map((thumbnail) => (
+            <div class="relative h-auto md:max-h-[50vh] aspect-insta group">
+              <a href="#" target="_blank" rel="noopener noreferrer ">
+                <img
+                  src={thumbnail.url}
+                  alt={thumbnail.name}
+                  class="object-contain h-auto max-w-full transform bg-cover rounded-md md:w-full md:h-full hover:scale-110"
+                />
+
+                <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 ease-out rounded-md opacity-0 group-hover:opacity-100 bg-primary-foreground/60">
+                  <p class="text-lg font-bold text-white">{thumbnail.name}</p>
+                </div>
+              </a>
+            </div>
+          ))
+        }
+      </div>
     </section>
   </main>
 </Layout>

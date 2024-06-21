@@ -1,22 +1,10 @@
 [
   {
-    "url": "https://i.ibb.co/ncrXc2V/1.png",
-    "alt_text": "First image",
-    "description": "Description for first image"
+    "url": "https://github.com/vincentcayadi/vincentcayadi.github.io/blob/main/src/images/galleryThumbnails/street.jpg?raw=true",
+    "name": "Street"
   },
   {
-    "url": "https://i.ibb.co/B3s7v4h/2.png",
-    "alt_text": "Second image",
-    "description": "Description for second image"
-  },
-  {
-    "url": "https://i.ibb.co/XXR8kzF/3.png",
-    "alt_text": "Third image",
-    "description": "Description for third image"
-  },
-  {
-    "url": "https://i.ibb.co/yg7BSdM/4.png",
-    "alt_text": "Fourth image",
-    "description": "Description for fourth image"
+    "url": "https://github.com/vincentcayadi/vincentcayadi.github.io/blob/main/src/images/galleryThumbnails/street.jpg?raw=true",
+    "name": "Street"
   }
 ]

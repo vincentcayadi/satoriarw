@@ -12,6 +12,9 @@ module.exports = {
       },
     },
     extend: {
+      aspectRatio: {
+        insta: "4 / 5",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
