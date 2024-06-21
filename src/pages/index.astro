@@ -1,7 +1,16 @@
 ---
+import { supabase } from "../db/supabase";
 import Layout from "../layouts/Layout.astro";
 import Carousel from "@/components/Carousel.jsx";
-import slides from "../data/carousel.json";
+// Fetch images from the 'carousel' folder
+const { data: slides, error } = await supabase
+  .from("images")
+  .select("*")
+  .eq("folder", "carousel");
+
+if (error) {
+  console.error("Error fetching images:", error);
+}
 import { Image } from "astro:assets";
 import galleryImage from "@/images/heroImage/gallery.jpg";
 import { ArrowRight } from "react-feather";
