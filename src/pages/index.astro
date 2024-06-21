@@ -6,7 +6,7 @@ import slides from "../data/carousel.json";
 
 <Layout title="Home | satori.arw">
   <main>
-    <section class="aspect-video select-none">
+    <section class="relative aspect-video select-none">
       <Carousel client:visible>
         {slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
       </Carousel>
