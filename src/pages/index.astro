@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Carousel from "@/components/Carousel.jsx";
 import slides from "../data/carousel.json";
+import { Image } from "astro:assets";
+import galleryImage from "@/images/heroImage/gallery.jpg";
+import { ArrowRight } from "react-feather";
 ---
 
 <Layout title="Home | satori.arw">
@@ -10,13 +13,20 @@ import slides from "../data/carousel.json";
       <Carousel client:visible>
         {slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
       </Carousel>
+      <div class="absolute top-0 left-0 w-full h-full bg-primary-foreground/40">
+        <h1
+          class="absolute text-lg font-bold text-white md:text-8xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block align-middle"
+        >
+          satori.arw
+        </h1>
+      </div>
     </section>
     <section
       class="container px-16 mx-auto my-12 grid grid-col-reverse md:grid-cols-2 md:px-32 md:py-32 place-items-center"
     >
       <div>
         <h1
-          class="text-3xl font-bold md:text-4xl text-left
+          class="text-3xl font-bold md:text-5xl text-left
   bg-gradient-to-r
  from-blue-600
  via-green-500
@@ -25,26 +35,57 @@ import slides from "../data/carousel.json";
  text-transparent
  bg-clip-text"
         >
-          Hey there!
+          Hey There!
         </h1>
-        <p class="pt-3 text-sm md:text-xl md:pt-6">
+        <p class="pt-3 text-sm md:text-lg md:pt-6">
           I dont have much to say but I go around the world and take cool
           photos.
         </p>
-        <p class="pt-2 text-sm md:text-xl">
+        <p class="pt-2 text-sm md:text-lg">
           I also other stuff like swimming, golfing, making robots etc. And P.S
           this website was made by hand by me! No sqaure space or wordpress pure
           raw coding.
         </p>
-        <p class="pt-2 text-sm md:text-xl">
+        <p class="pt-2 text-sm md:text-lg">
           Feel free to roam around and check out my photos. If you got any
           questions just shoot one to satorishoots_@gmail.com.
         </p>
 
-        <p class="pt-2 text-sm md:text-xl">Enjoy your stay here!</p>
-        <p class="pt-4 text-sm md:text-xl">Vincent</p>
+        <p class="pt-2 text-sm md:text-lg">Enjoy your stay here!</p>
+        <p class="pt-4 text-sm md:text-lg">Vincent</p>
       </div>
-      <div class="order-first text-center md:-order-first">No good photos</div>
+      <div class="text-center mt-4 sm:mx-auto sm:mt-0">
+        <Image
+          src="/pfp.jpg"
+          width={256}
+          height={256}
+          alt="pfp"
+          class="rounded-xl"
+        />
+      </div>
+    </section>
+    <section class="relative select-none my-12">
+      <Image src={galleryImage} alt="Image" class="object-cover bg-fixed" />
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-primary-foreground/30 flex items-center justify-start px-6 md:px-24"
+      >
+        <a href="/gallery">
+          <h1
+            transition:name="gallery-title"
+            class="relative text-lg font-bold text-primary md:text-7xl text-left hover:translate-x-4 duration-500 ease-out group py-2"
+          >
+            Gallery
+            <span>
+              <ArrowRight
+                className="w-4 h-4 md:w-10 md:h-10 duration-500 stroke-primary inline-block opacity-100 md:opacity-0 md:group-hover:opacity-100 ease-out"
+              />
+            </span>
+            <span
+              class="delay-150 absolute left-0 bottom-0 w-[calc(100%-2.5rem)] md:w-[calc(100%-3rem)] h-1 bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"
+            ></span>
+          </h1>
+        </a>
+      </div>
     </section>
   </main>
 </Layout>
