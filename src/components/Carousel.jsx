@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "react-feather";
+import { ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 
 export default function Carousel({ children: slides }) {
-  const autoSlideInterval = 3000;
+  const autoSlideInterval = 5000;
   const [i, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
@@ -28,12 +28,12 @@ export default function Carousel({ children: slides }) {
       >
         {slides}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between px-4">
+      <div className="absolute inset-0 flex items-center justify-between px-4 md:px-8">
         <button onClick={prevSlide}>
-          <ChevronLeft size={40} />
+          <ArrowLeftCircle className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 duration-200" />
         </button>
         <button onClick={nextSlide}>
-          <ChevronRight size={40} />
+          <ArrowRightCircle className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 duration-200" />
         </button>
       </div>
     </div>
