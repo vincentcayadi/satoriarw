@@ -15,25 +15,18 @@ import { ArrowRight } from "react-feather";
       </Carousel>
       <div class="absolute top-0 left-0 w-full h-full bg-primary-foreground/40">
         <h1
-          class="absolute text-lg font-bold text-white md:text-8xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block align-middle"
+          class="absolute inline-block text-lg font-bold text-white align-middle transform -translate-x-1/2 -translate-y-1/2 md:text-8xl top-1/2 left-1/2"
         >
           satori.arw
         </h1>
       </div>
     </section>
     <section
-      class="container px-16 mx-auto my-12 grid grid-col-reverse md:grid-cols-2 md:px-32 md:py-32 place-items-center"
+      class="container grid my-12 grid-col-reverse md:grid-cols-2 md:py-32 place-items-center"
     >
       <div>
         <h1
-          class="text-3xl font-bold md:text-5xl text-left
-  bg-gradient-to-r
- from-blue-600
- via-green-500
- to-indigo-400
- inline-block
- text-transparent
- bg-clip-text"
+          class="inline-block text-3xl font-bold text-left text-transparent md:text-5xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 bg-clip-text"
         >
           Hey There!
         </h1>
@@ -54,7 +47,7 @@ import { ArrowRight } from "react-feather";
         <p class="pt-2 text-sm md:text-lg">Enjoy your stay here!</p>
         <p class="pt-4 text-sm md:text-lg">Vincent</p>
       </div>
-      <div class="text-center mt-4 sm:mx-auto sm:mt-0">
+      <div class="mt-4 text-center sm:mx-auto sm:mt-0">
         <Image
           src="/pfp.jpg"
           width={256}
@@ -64,20 +57,20 @@ import { ArrowRight } from "react-feather";
         />
       </div>
     </section>
-    <section class="relative select-none my-12">
+    <section class="relative my-12 select-none">
       <Image src={galleryImage} alt="Image" class="object-cover bg-fixed" />
       <div
-        class="absolute top-0 left-0 w-full h-full bg-primary-foreground/30 flex items-center justify-start px-6 md:px-24"
+        class="absolute top-0 left-0 flex items-center justify-start w-full h-full px-6 bg-primary-foreground/30 md:px-24"
       >
         <a href="/gallery">
           <h1
             transition:name="gallery-title"
-            class="relative text-lg font-bold text-primary md:text-7xl text-left hover:translate-x-4 duration-500 ease-out group py-2"
+            class="relative py-2 text-2xl font-bold text-left text-white duration-500 ease-out text-primary md:text-7xl hover:translate-x-4 group"
           >
             Gallery
             <span>
               <ArrowRight
-                className="w-4 h-4 md:w-10 md:h-10 duration-500 stroke-primary inline-block opacity-100 md:opacity-0 md:group-hover:opacity-100 ease-out"
+                className="inline-block w-4 h-4 opacity-0 md:w-10 md:h-10 duration-500 stroke-primary md:opacity-0 md:group-hover:opacity-100 ease-out"
               />
             </span>
             <span
