@@ -2,16 +2,15 @@
 import { supabase } from "../db/supabase";
 import Layout from "../layouts/Layout.astro";
 import Carousel from "@/components/Carousel.jsx";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "@/components/ui/skeleton.tsx";
+
 // Fetch images from the 'carousel' folder
 const { data: slides, error } = await supabase
   .from("images")
   .select("*")
   .eq("folder", "carousel");
 
-if (error) {
-  console.error("Error fetching images:", error);
-}
+
 import { Image } from "astro:assets";
 import galleryImage from "@/images/heroImage/gallery.jpg";
 import { ArrowRight } from "react-feather";
@@ -21,14 +20,14 @@ import { ArrowRight } from "react-feather";
   <main>
     <section class="relative select-none">
       {
-        slides && slides.length > 0 ? (
+        !slides || slides.length === 0 ? (
+          <Skeleton className="aspect-video" />
+        ) : (
           <Carousel client:visible>
             {slides.map((s) => (
               <img src={s.url} alt={s.alt_text} />
             ))}
           </Carousel>
-        ) : (
-          <Skeleton className="w-[100px] h-[20px] rounded-full" />
         )
       }
       <div class="absolute top-0 left-0 w-full h-full bg-primary-foreground/40">
