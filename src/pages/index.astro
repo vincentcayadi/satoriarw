@@ -2,6 +2,7 @@
 import { supabase } from "../db/supabase";
 import Layout from "../layouts/Layout.astro";
 import Carousel from "@/components/Carousel.jsx";
+import { Skeleton } from "@/components/ui/skeleton";
 // Fetch images from the 'carousel' folder
 const { data: slides, error } = await supabase
   .from("images")
@@ -19,9 +20,17 @@ import { ArrowRight } from "react-feather";
 <Layout title="Home | satori.arw">
   <main>
     <section class="relative select-none">
-      <Carousel client:visible>
-        {slides && slides.map((s) => <img src={s.url} alt={s.alt_text} />)}
-      </Carousel>
+      {
+        slides && slides.length > 0 ? (
+          <Carousel client:visible>
+            {slides.map((s) => (
+              <img src={s.url} alt={s.alt_text} />
+            ))}
+          </Carousel>
+        ) : (
+          <Skeleton className="w-[100px] h-[20px] rounded-full" />
+        )
+      }
       <div class="absolute top-0 left-0 w-full h-full bg-primary-foreground/40">
         <h1
           class="absolute inline-block text-xs font-semibold transform -translate-x-1/2 text-neutral-200/80 md:font-bold bottom-2 md:bottom-6 left-1/2 md:text-4xl"
