@@ -29,16 +29,10 @@ export default function Carousel({ children: slides }) {
         {slides}
       </div>
       <div className="absolute inset-0 flex items-center justify-between px-4 md:px-8">
-        <button
-          onClick={prevSlide}
-          className="p-1 bg-primary-foreground/40 rounded-full z-40"
-        >
+        <button onClick={prevSlide} className="z-40">
           <ArrowLeftCircle className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 duration-200 stroke-neutral-300" />
         </button>
-        <button
-          onClick={nextSlide}
-          className="p-1 bg-primary-foreground/40 rounded-full z-40"
-        >
+        <button onClick={nextSlide} className="z-40">
           <ArrowRightCircle className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 duration-200 stroke-neutral-300" />
         </button>
       </div>
