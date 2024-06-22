@@ -1,0 +1,33 @@
+---
+import { supabase } from "../db/supabase";
+import Layout from "@/layouts/Layout.astro";
+const { data: banner } = await supabase
+  .from("images")
+  .select("*")
+  .eq("folder", "banner")
+  .eq("name", "wildlife_banner");
+import { Skeleton } from "@/components/ui/skeleton.tsx";
+---
+
+<Layout>
+  <section class="relative text-center">
+    {
+      banner && banner.length > 0 ? (
+        <img
+          src={banner[0].url}
+          alt={banner[0].alt_text}
+          class="bg-fixed aspect-[3/1] object-cover"
+        />
+      ) : (
+        <Skeleton className="aspect-[3/1]" />
+      )
+    }
+    <div class="absolute top-0 left-0 w-full h-full bg-secondary/30">
+      <h1
+        class="absolute text-2xl font-bold text-white transform -translate-x-1/2 -translate-y-1/2 md:text-6xl lg:text-8xl top-1/2 left-1/2"
+      >
+        Wildlife
+      </h1>
+    </div>
+  </section>
+</Layout>

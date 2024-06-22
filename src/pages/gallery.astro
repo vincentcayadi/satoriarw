@@ -2,23 +2,34 @@
 import { supabase } from "../db/supabase";
 
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import bannerImage from "@/images/heroImage/gallery.jpg";
+import { Skeleton } from "@/components/ui/skeleton.tsx";
 
 const { data: thumbnails, error } = await supabase
   .from("images")
   .select("*")
   .eq("folder", "thumbnails");
+
+const { data: banner } = await supabase
+  .from("images")
+  .select("*")
+  .eq("folder", "banner")
+  .eq("name", "gallery_banner");
 ---
 
 <Layout>
   <main>
     <section class="relative text-center">
-      <Image
-        src={bannerImage}
-        alt="Image"
-        class="object-cover bg-fixed aspect-[3/1]"
-      />
+      {
+        banner && banner.length > 0 ? (
+          <img
+            src={banner[0].url}
+            alt={banner[0].alt_text}
+            class="bg-fixed aspect-[10/5] object-cover"
+          />
+        ) : (
+          <Skeleton className="aspect-[10/5]" />
+        )
+      }
       <div class="absolute top-0 left-0 w-full h-full bg-secondary/30">
         <h1
           class="absolute text-2xl font-bold text-white transform -translate-x-1/2 -translate-y-1/2 md:text-6xl lg:text-8xl top-1/2 left-1/2"
@@ -33,7 +44,7 @@ const { data: thumbnails, error } = await supabase
         Here are some of the photos I've taken over the years. Hover to view the
         categories
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         <!-- Gallery Thumbnails -->
         {
           thumbnails?.map((thumbnail) => (
@@ -46,10 +57,10 @@ const { data: thumbnails, error } = await supabase
                 <img
                   src={thumbnail.url}
                   alt={thumbnail.name}
-                  class="object-cover h-auto max-w-full bg-cover transform rounded-md md:w-full md:h-full"
+                  class="object-cover h-auto max-w-full transform bg-cover rounded-md md:w-full md:h-full"
                 />
 
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-out rounded-md group-hover:opacity-100 bg-secondary/60">
+                <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 ease-out rounded-md opacity-0 group-hover:opacity-100 bg-secondary/60">
                   <p class="text-lg font-bold text-white md:text-xl lg:text-3xl">
                     {thumbnail.name}
                   </p>

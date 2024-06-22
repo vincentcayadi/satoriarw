@@ -5,13 +5,18 @@ import Carousel from "@/components/Carousel.jsx";
 import { Skeleton } from "@/components/ui/skeleton.tsx";
 
 // Fetch images from the 'carousel' folder
-const { data: slides, error } = await supabase
+const { data: slides } = await supabase
   .from("images")
   .select("*")
   .eq("folder", "carousel");
 
+const { data: banner } = await supabase
+  .from("images")
+  .select("*")
+  .eq("folder", "banner")
+  .eq("name", "gallery_banner");
+
 import { Image } from "astro:assets";
-import galleryImage from "@/images/heroImage/gallery.jpg";
 import { ArrowRight } from "react-feather";
 ---
 
@@ -40,7 +45,7 @@ import { ArrowRight } from "react-feather";
       </div>
     </section>
     <section
-      class="container my-12 grid grid-col-reverse md:grid-cols-2 md:py-32 place-items-center"
+      class="container grid my-12 grid-col-reverse md:grid-cols-2 md:py-32 place-items-center"
     >
       <div>
         <h1
@@ -79,11 +84,17 @@ import { ArrowRight } from "react-feather";
     </section>
   </main>
   <section class="relative my-12 select-none">
-    <Image
-      src={galleryImage}
-      alt="Image"
-      class="bg-fixed aspect-[3/1] object-cover"
-    />
+    {
+      banner && banner.length > 0 ? (
+        <img
+          src={banner[0].url}
+          alt={banner[0].alt_text}
+          class="bg-fixed aspect-[3/1] object-cover"
+        />
+      ) : (
+        <Skeleton className="aspect-[3/1]" />
+      )
+    }
     <div
       class="absolute top-0 left-0 flex items-center justify-start w-full h-full px-6 bg-secondary/30 md:px-16 lg:px-24"
     >
