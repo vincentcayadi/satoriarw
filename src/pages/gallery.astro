@@ -41,16 +41,16 @@ const { data: thumbnails, error } = await supabase
               <a
                 href={thumbnail.href}
                 target="_blank"
-                rel="noopener noreferrer "
+                rel="noopener noreferrer"
               >
                 <img
                   src={thumbnail.url}
                   alt={thumbnail.name}
-                  class="object-cover h-auto max-w-full transform bg-cover rounded-md md:w-full md:h-full"
+                  class="object-cover h-auto max-w-full bg-cover transform rounded-md md:w-full md:h-full"
                 />
 
-                <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 ease-out rounded-md opacity-0 group-hover:opacity-100 bg-secondary/60">
-                  <p class="text-lg md:text-xl lg:text-3xl font-bold text-white">
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-out rounded-md group-hover:opacity-100 bg-secondary/60">
+                  <p class="text-lg font-bold text-white md:text-xl lg:text-3xl">
                     {thumbnail.name}
                   </p>
                 </div>
