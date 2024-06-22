@@ -1,11 +1,11 @@
 export const author = "satori.arw";
 
 export const defaultMeta = {
-  title: "satroriarw",
+  title: "satrori.arw",
   description: "yes.",
   ogImage: {
     src: "/images/banner.webp",
     alt: "satrori.arw",
   },
-  wesbite: "https://satroiarw.vercel.app",
+  wesbite: "https://satoriarw.vercel.app/",
 };
