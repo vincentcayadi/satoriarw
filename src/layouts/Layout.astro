@@ -16,7 +16,7 @@ interface Props {
 }
 
 const {
-  title,
+  title = defaultMeta.title,
   description = defaultMeta.description,
   ogImage = defaultMeta.ogImage,
 } = Astro.props;
@@ -92,6 +92,7 @@ const finalTitle = title || getDefaultTitle();
 
     <!-- Generator Meta Tag -->
     <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="follow, index" />
 
     <!-- Title Tag -->
     <title>{finalTitle} | satori.arw</title>

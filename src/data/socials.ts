@@ -1,7 +1,7 @@
 export const author = "satori.arw";
 
 export const defaultMeta = {
-  title: "satrori.arw",
+  title: "satroriarw",
   description: "yes.",
   ogImage: {
     src: "/images/banner.webp",
