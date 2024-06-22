@@ -29,7 +29,6 @@
     "react-feather": "^2.0.10",
     "react-hook-form": "^7.52.0",
     "satori": "^0.10.13",
-    "satori-astro": "^0.0.1",
     "satori-html": "^0.3.2",
     "sharp": "^0.33.4",
     "tailwind-merge": "^2.3.0",
