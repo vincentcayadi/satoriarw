@@ -4,33 +4,35 @@ import Navbar from "@/components/Navbar.astro";
 import "@/styles/globals.css";
 import { ViewTransitions } from "astro:transitions";
 import { defaultMeta } from "@/data/socials.ts";
-import { getOgImagePath } from "@/utils/generateOgImages.tsx";
+import { getOgImagePath } from "../utils/generateOgImages";
 
 interface Props {
-  title?: string;
+  title: string;
   description?: string;
   ogImage?: {
     src: string;
     alt: string;
   };
+  pubDate?: Date;
 }
 
 const {
   title = defaultMeta.title,
   description = defaultMeta.description,
   ogImage = defaultMeta.ogImage,
+  pubDate,
 } = Astro.props;
 
 const ogImageURL = new URL(getOgImagePath(Astro.url.pathname), Astro.url.origin)
   .href;
 const canonicalURL = new URL(Astro.url).href;
 
-const getDefaultTitle = () => {
-  const pathName = Astro.url.pathname.replace("/", "");
-  return pathName.charAt(0).toUpperCase() + pathName.slice(1);
-};
+// const getDefaultTitle = () => {
+//   const pathName = Astro.url.pathname.replace("/", "");
+//   return pathName.charAt(0).toUpperCase() + pathName.slice(1);
+// };
 
-const finalTitle = title || getDefaultTitle();
+// const finalTitle = title || getDefaultTitle();
 ---
 
 <script is:inline>
@@ -56,7 +58,6 @@ const finalTitle = title || getDefaultTitle();
     });
   }
 
-  // Add this block
   document.addEventListener("astro:after-swap", () => {
     const isDark = getThemePreference() === "dark";
     document.documentElement.classList[isDark ? "add" : "remove"]("dark");
@@ -66,36 +67,63 @@ const finalTitle = title || getDefaultTitle();
 <html lang="en">
   <head>
     <!-- Essential Meta Tags -->
-    <meta charset="UTF-8" />
+    <!-- <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
 
     <!-- SEO Meta Tags -->
-    <meta name="title" content={finalTitle} | satori.arw />
-    <meta name="description" content={description} />
+    <!-- <meta name="title" content={finalTitle} | satori.arw />
+    <meta name="description" content={description} /> -->
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website" />
+    <!-- <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={finalTitle} | satori.arw />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL} />
     <meta property="og:image:alt" content={ogImage.alt} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_US" /> -->
 
     <!-- Twitter Meta Tags -->
-    <meta property="twitter:card" content="summary_large_image" />
+    <!-- <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={finalTitle} | satori.arw />
     <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImageURL} /> -->
+
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Primary Meta Tags -->
+    <title>{title + " | Sentinels Robotics"}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="title" content={title + " | Sentinels Robotics"} />
+    <meta name="description" content={description} />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title + " | Sentinels Robotics"} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:alt" content={ogImage.alt} />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title + " | Sentinels Robotics"} />
+    <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImageURL} />
+
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="follow, index" />
 
     <!-- Generator Meta Tag -->
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="follow, index" />
 
     <!-- Title Tag -->
-    <title>{finalTitle} | satori.arw</title>
+    <!-- <title>{finalTitle} | satori.arw</title> -->
     <ViewTransitions />
   </head>
   <Navbar />

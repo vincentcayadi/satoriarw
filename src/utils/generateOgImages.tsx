@@ -14,26 +14,35 @@ export interface OgData {
 const Template = (props: OgData) => (
   <div
     style={{
+      display: "flex",
       height: "100%",
       width: "100%",
-      display: "flex",
-      flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      backgroundColor: "#fff",
-      fontSize: 32,
-      fontWeight: 600,
+      flexDirection: "column",
+      background: "rgb(24 24 27)",
+      letterSpacing: -1,
+      fontWeight: 700,
+      textAlign: "center",
       fontFamily: "Inter",
     }}
   >
     <div
       style={{
+        color: "#FBFBFB",
         fontSize: 50,
       }}
     >
       {props.title}
     </div>
-    <div>satori.arw</div>
+    <div
+      style={{
+        color: "#FBFBFB",
+        fontSize: 20,
+      }}
+    >
+      Sentinels Robotics
+    </div>
   </div>
 );
 
