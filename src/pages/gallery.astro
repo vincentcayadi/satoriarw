@@ -1,8 +1,14 @@
 ---
+import { supabase } from "../db/supabase";
+
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import bannerImage from "@/images/heroImage/gallery.jpg";
-import galleryThumbnails from "@/data/gallery.json";
+
+const { data: thumbnails, error } = await supabase
+  .from("images")
+  .select("*")
+  .eq("folder", "thumbnails");
 ---
 
 <Layout>
@@ -30,7 +36,7 @@ import galleryThumbnails from "@/data/gallery.json";
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <!-- Gallery Thumbnails -->
         {
-          galleryThumbnails.map((thumbnail) => (
+          thumbnails?.map((thumbnail) => (
             <div class="relative h-auto md:max-h-[50vh] aspect-sqaure group">
               <a
                 href={thumbnail.href}
