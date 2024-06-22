@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+export default {
   darkMode: ["class"],
   content: ["./src/**/*.{ts,tsx,astro,jsx}"],
   prefix: "",
@@ -12,6 +14,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+                sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
+      },
       aspectRatio: {
         insta: "4 / 5",
         camera: "2 / 3",
