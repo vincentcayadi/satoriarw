@@ -3,8 +3,8 @@ import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar.astro";
 import "@/styles/globals.css";
 import { ViewTransitions } from "astro:transitions";
-import { defaultMeta } from "../data/socials.ts";
-import { getOgImagePath } from "../utils/generateOgImages.tsx";
+import { defaultMeta } from "../data/socials";
+import { getOgImagePath } from "../utils/generateOgImages";
 
 interface Props {
   title: string;
@@ -21,8 +21,10 @@ const {
   ogImage = defaultMeta.ogImage,
 } = Astro.props;
 
-const ogImageURL = new URL(getOgImagePath(Astro.url.pathname), Astro.url.origin)
-  .href;
+const ogImageURL = new URL(
+  getOgImagePath(Astro.url.pathname),
+  "https://satoriarw.vercel.app"
+).href;
 const canonicalURL = new URL(Astro.url).href;
 
 const getDefaultTitle = () => {

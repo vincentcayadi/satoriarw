@@ -5,7 +5,7 @@ export const defaultMeta = {
   description: "The best way to learn is to watch your robot go up in flames.",
   ogImage: {
     src: "/images/banner.webp",
-    alt: "Sentinels Robotics",
+    alt: "satoriarw",
   },
-  wesbite: "https://senrobo.github.io",
+  wesbite: "https://satoriarw.vercel.app/",
 };
