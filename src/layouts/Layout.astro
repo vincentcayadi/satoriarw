@@ -15,7 +15,11 @@ interface Props {
   };
 }
 
-const { title, description=defaultMeta.description, ogImage = defaultMeta.ogImage } = Astro.props;
+const {
+  title,
+  description = defaultMeta.description,
+  ogImage = defaultMeta.ogImage,
+} = Astro.props;
 
 const ogImageURL = new URL(getOgImagePath(Astro.url.pathname), Astro.url.origin)
   .href;
@@ -61,11 +65,35 @@ const finalTitle = title || getDefaultTitle();
 
 <html lang="en">
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content={finalTitle} | satori.arw />
+    <meta name="description" content={description} />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={finalTitle} | satori.arw />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:alt" content={ogImage.alt} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={finalTitle} | satori.arw />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImageURL} />
+
+    <!-- Generator Meta Tag -->
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Title Tag -->
     <title>{finalTitle} | satori.arw</title>
     <ViewTransitions />
   </head>
