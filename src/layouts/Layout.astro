@@ -3,12 +3,23 @@ import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar.astro";
 import "@/styles/globals.css";
 import { ViewTransitions } from "astro:transitions";
+import { defaultMeta } from "@/data/socials.ts";
+import { getOgImagePath } from "@/utils/generateOgImages.tsx";
 
 interface Props {
   title?: string;
+  description?: string;
+  ogImage?: {
+    src: string;
+    alt: string;
+  };
 }
 
-const { title } = Astro.props;
+const { title, description=defaultMeta.description, ogImage = defaultMeta.ogImage } = Astro.props;
+
+const ogImageURL = new URL(getOgImagePath(Astro.url.pathname), Astro.url.origin)
+  .href;
+const canonicalURL = new URL(Astro.url).href;
 
 const getDefaultTitle = () => {
   const pathName = Astro.url.pathname.replace("/", "");
