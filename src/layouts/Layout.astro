@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar.astro";
 import "@/styles/globals.css";
 import { ViewTransitions } from "astro:transitions";
 import { defaultMeta } from "@/data/socials.ts";
+import { getOgImagePath } from "@/utils/generateOgImages.tsx";
 
 interface Props {
   title?: string;
@@ -19,7 +20,11 @@ const {
   description = defaultMeta.description,
   ogImage = defaultMeta.ogImage,
 } = Astro.props;
-const canonicalURL = new URL(Astro.url).href;
+
+const ogImageURL = new URL(getOgImagePath(Astro.url.pathname), Astro.site).href;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+console.log(ogImageURL);
 
 const getDefaultTitle = () => {
   const pathName = Astro.url.pathname.replace("/", "");
@@ -74,8 +79,8 @@ const finalTitle = title || getDefaultTitle();
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={finalTitle} | satori.arw />
     <meta property="og:description" content={description} />
-    <!-- <meta property="og:image" content={ogImageURL} />
-    <meta property="og:image:alt" content={ogImage.alt} /> -->
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:alt" content={ogImage.alt} />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Meta Tags -->
@@ -83,7 +88,7 @@ const finalTitle = title || getDefaultTitle();
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={finalTitle} | satori.arw />
     <meta property="twitter:description" content={description} />
-    <!-- <meta property="twitter:image" content={ogImageURL} /> -->
+    <meta property="twitter:image" content={ogImageURL} />
 
     <!-- Generator Meta Tag -->
     <meta name="generator" content={Astro.generator} />
