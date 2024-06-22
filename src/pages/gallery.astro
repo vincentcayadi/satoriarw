@@ -5,7 +5,7 @@ import bannerImage from "@/images/heroImage/gallery.jpg";
 import galleryThumbnails from "@/data/gallery.json";
 ---
 
-<Layout title="Gallery | satori.arw">
+<Layout>
   <main>
     <section class="relative text-center">
       <Image
@@ -27,14 +27,16 @@ import galleryThumbnails from "@/data/gallery.json";
         Here are some of the photos I've taken over the years. Hover to view the
         categories
       </p>
-      <div
-        class="flex flex-col space-y-4 md:space-y-0 md:justify-evenly md:flex-row"
-      >
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <!-- Gallery Thumbnails -->
         {
           galleryThumbnails.map((thumbnail) => (
-            <div class="relative h-auto md:max-h-[50vh] aspect-camera group">
-              <a href="#" target="_blank" rel="noopener noreferrer ">
+            <div class="relative h-auto md:max-h-[50vh] aspect-sqaure group">
+              <a
+                href={thumbnail.href}
+                target="_blank"
+                rel="noopener noreferrer "
+              >
                 <img
                   src={thumbnail.url}
                   alt={thumbnail.name}

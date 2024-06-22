@@ -1,13 +1,21 @@
 ---
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
 import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar.astro";
 import "@/styles/globals.css";
 import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+
+const getDefaultTitle = () => {
+  const pathName = Astro.url.pathname.replace("/", "");
+  return pathName.charAt(0).toUpperCase() + pathName.slice(1);
+};
+
+const finalTitle = title || getDefaultTitle();
 ---
 
 <script is:inline>
@@ -39,6 +47,7 @@ import { ViewTransitions } from "astro:transitions";
     document.documentElement.classList[isDark ? "add" : "remove"]("dark");
   });
 </script>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -46,7 +55,7 @@ import { ViewTransitions } from "astro:transitions";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{finalTitle} | satori.arw</title>
     <ViewTransitions />
   </head>
   <Navbar />

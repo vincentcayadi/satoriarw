@@ -15,7 +15,7 @@ import galleryImage from "@/images/heroImage/gallery.jpg";
 import { ArrowRight } from "react-feather";
 ---
 
-<Layout title="Home | satori.arw">
+<Layout title="Home">
   <main>
     <section class="relative select-none">
       {
@@ -29,9 +29,11 @@ import { ArrowRight } from "react-feather";
           </Carousel>
         )
       }
-      <div class="absolute top-0 left-0 w-full h-full bg-black/30">
+      <div
+        class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-transparent to-black"
+      >
         <h1
-          class="absolute inline-block text-xs font-semibold transform -translate-x-1/2 text-muted-foreground md:font-bold bottom-2 md:bottom-6 left-1/2 md:text-4xl"
+          class="absolute inline-block text-xs font-semibold transform -translate-x-1/2 text-neutral-200 md:font-bold bottom-2 md:bottom-6 left-1/2 md:text-4xl"
         >
           satori.arw
         </h1>
@@ -63,13 +65,15 @@ import { ArrowRight } from "react-feather";
         <p class="pt-2 text-sm md:text-lg">Enjoy your stay here!</p>
         <p class="pt-4 text-sm md:text-lg">Vincent</p>
       </div>
-      <div class="mt-4 text-center sm:mx-auto sm:mt-0">
+      <div
+        class="mt-4 flex justify-center items-center md:justify-end sm:mx-auto sm:mt-0 w-full h-full"
+      >
         <Image
           src="/pfp.jpg"
           width={256}
           height={256}
           alt="pfp"
-          class="rounded-xl h-48 w-48 md:h-64 md:w-64"
+          class="rounded-xl h-48 w-48 md:h-3/5 md:w-auto aspect-square"
         />
       </div>
     </section>
@@ -81,12 +85,12 @@ import { ArrowRight } from "react-feather";
       class="bg-fixed aspect-[3/1] object-cover"
     />
     <div
-      class="absolute top-0 left-0 flex items-center justify-start w-full h-full px-6 bg-secondary/30 md:px-24"
+      class="absolute top-0 left-0 flex items-center justify-start w-full h-full px-6 bg-secondary/30 md:px-16 lg:px-24"
     >
       <a href="/gallery">
         <h1
           transition:name="gallery-title"
-          class="relative py-2 text-xl font-bold text-left duration-500 ease-out text-neutral-200 md:text-7xl hover:translate-x-4 group"
+          class="relative py-2 text-2xl font-bold text-left duration-500 ease-out text-neutral-200 md:text-5xl lg:text-7xl hover:translate-x-4 group"
         >
           Gallery
           <span>
