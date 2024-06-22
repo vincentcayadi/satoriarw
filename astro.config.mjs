@@ -4,6 +4,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://satoriarw.vercel.app",
+  trailingSlash: "never",
   integrations: [
     tailwind({
       applyBaseStyles: false,
