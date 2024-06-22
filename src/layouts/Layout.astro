@@ -13,26 +13,24 @@ interface Props {
     src: string;
     alt: string;
   };
-  pubDate?: Date;
 }
 
 const {
   title = defaultMeta.title,
   description = defaultMeta.description,
   ogImage = defaultMeta.ogImage,
-  pubDate,
 } = Astro.props;
 
 const ogImageURL = new URL(getOgImagePath(Astro.url.pathname), Astro.url.origin)
   .href;
 const canonicalURL = new URL(Astro.url).href;
 
-// const getDefaultTitle = () => {
-//   const pathName = Astro.url.pathname.replace("/", "");
-//   return pathName.charAt(0).toUpperCase() + pathName.slice(1);
-// };
+const getDefaultTitle = () => {
+  const pathName = Astro.url.pathname.replace("/", "");
+  return pathName.charAt(0).toUpperCase() + pathName.slice(1);
+};
 
-// const finalTitle = title || getDefaultTitle();
+const finalTitle = title || getDefaultTitle();
 ---
 
 <script is:inline>
@@ -123,7 +121,7 @@ const canonicalURL = new URL(Astro.url).href;
     <meta name="robots" content="follow, index" />
 
     <!-- Title Tag -->
-    <!-- <title>{finalTitle} | satori.arw</title> -->
+    <title>{finalTitle} | satori.arw</title>
     <ViewTransitions />
   </head>
   <Navbar />
@@ -138,15 +136,6 @@ const canonicalURL = new URL(Astro.url).href;
     }
     nav::-webkit-scrollbar {
       display: none; /* Safari and Chrome */
-    }
-    :root {
-      --pagefind-ui-primary: #d8d8d8;
-      --pagefind-ui-secondary: #d8d8d8;
-      --pagefind-ui-background: #1d1f21;
-      --pagefind-ui-border: #2b2b2b;
-      --pagefind-ui-tag: #d8d8d8;
-      --pagefind-ui-text: #d8d8d8;
-      --pagefind-ui-font: "InterVariable", "Inter", sans-serif;
     }
   </style>
 </html>
