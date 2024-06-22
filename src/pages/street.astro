@@ -4,14 +4,14 @@ import Layout from "@/layouts/Layout.astro";
 import { Skeleton } from "@/components/ui/skeleton.tsx";
 
 // Fetch the banner image
-const { data: banner, error: bannerError } = await supabase
+const { data: banner } = await supabase
   .from("images")
   .select("*")
   .eq("folder", "banner")
   .eq("name", "street_banner");
 
 // Fetch the gallery images
-const { data: images, error: imagesError } = await supabase
+const { data: images} = await supabase
   .from("gallery_images")
   .select("*")
   .eq("folder", "street")

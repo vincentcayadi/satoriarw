@@ -4,7 +4,7 @@ import { supabase } from "../db/supabase";
 import Layout from "../layouts/Layout.astro";
 import { Skeleton } from "@/components/ui/skeleton.tsx";
 
-const { data: thumbnails, error } = await supabase
+const { data: thumbnails } = await supabase
   .from("images")
   .select("*")
   .eq("folder", "thumbnails");

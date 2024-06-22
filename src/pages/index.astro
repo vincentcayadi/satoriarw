@@ -4,7 +4,6 @@ import Layout from "../layouts/Layout.astro";
 import Carousel from "@/components/Carousel.jsx";
 import { Skeleton } from "@/components/ui/skeleton.tsx";
 
-// Fetch images from the 'carousel' folder
 const { data: slides } = await supabase
   .from("images")
   .select("*")
