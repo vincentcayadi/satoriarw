@@ -39,17 +39,67 @@ const { data: images, error: imagesError } = await supabase
       </h1>
     </div>
   </section>
-  <section class="container my-12 columns-2xs">
+  <section class="container my-12 modal columns-2xs">
     {
       images?.map((image) => (
-        <div class="p-2 mx-2 mb-6 rounded-lg duration-300 ease-in-out bg-primary-foreground hover:scale-105 ">
-          <img
-            src={image.url}
-            alt={image.alt}
-            class="h-auto rounded-lg aspect-auto"
-          />
+        <div class="p-2 mx-2 mb-6 duration-300 ease-in-out bg-primary-foreground hover:scale-105">
+          <img src={image.url} alt={image.alt} class="h-auto aspect-auto" />
         </div>
       ))
     }
   </section>
+
+  <div
+    id="modal"
+    class="fixed top-0 left-0 flex items-center justify-center hidden w-screen h-screen z-80 bg-black/70"
+  >
+    <a
+      class="fixed text-5xl font-bold text-white z-90 top-6 right-8"
+      href="javascript:void(0)"
+      onclick="closeModal()"
+    >
+      ×
+    </a>
+
+    <div class="flex flex-col items-center">
+      <img
+        id="modal-img"
+        class="object-cover max-w-full max-h-[80vh] p-2 bg-primary-foreground"
+      />
+      <p id="modal-alt" class="mt-4 text-white"></p>
+    </div>
+  </div>
+  <script is:inline>
+    var images = document.querySelectorAll(".container img");
+
+    images.forEach(function (img) {
+      img.addEventListener("click", function () {
+        showModal(img.src, img.alt);
+      });
+    });
+
+    var modal = document.getElementById("modal");
+
+    var modalImg = document.getElementById("modal-img");
+    var modalAlt = document.getElementById("modal-alt");
+
+    function showModal(src, alt) {
+      modal.classList.remove("hidden");
+      modalImg.src = src;
+      modalAlt.textContent = formatAltText(alt);
+    }
+
+    function closeModal() {
+      modal.classList.add("hidden");
+    }
+
+    function formatAltText(alt) {
+      return alt
+        .split("_")
+        .map(
+          (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        )
+        .join(" ");
+    }
+  </script>
 </Layout>
