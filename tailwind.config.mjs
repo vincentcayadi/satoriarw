@@ -8,14 +8,14 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "3rem",
       screens: {
         "2xl": "1400px",
       },
     },
     extend: {
       fontFamily: {
-                sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
       aspectRatio: {
         insta: "4 / 5",

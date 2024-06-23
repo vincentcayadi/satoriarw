@@ -39,10 +39,10 @@ const { data: images, error: imagesError } = await supabase
       </h1>
     </div>
   </section>
-  <section class="container my-12 columns-2xs p-4">
+  <section class="container my-12 columns-2xs">
     {
       images?.map((image) => (
-        <div class="p-2 mb-6 duration-300 ease-in-out bg-white rounded-lg hover:scale-105  ">
+        <div class="p-2 mb-6 duration-300 ease-in-out bg-white rounded-lg hover:scale-105 ">
           <img
             src={image.url}
             alt={image.alt}
