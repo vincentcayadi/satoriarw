@@ -44,6 +44,16 @@ const { data: banner } = await supabase
         Here are some of the photos I've taken over the years. Hover to view the
         categories
       </p>
+      <div id="search" class="mb-10 text-white"></div>
+      <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+          //@ts-ignore
+          new PagefindUI({
+            element: "#search",
+            debounceTimeoutMs: 500,
+          });
+        });
+      </script>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         <!-- Gallery Thumbnails -->
         {
@@ -60,7 +70,7 @@ const { data: banner } = await supabase
                   class="object-cover w-full h-full bg-cover rounded-md aspect-square"
                 />
 
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-out rounded-md group-hover:opacity-100 bg-secondary/60">
+                <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 ease-out rounded-md opacity-0 group-hover:opacity-100 bg-secondary/60">
                   <p class="text-lg font-bold text-white md:text-xl lg:text-3xl">
                     {thumbnail.name}
                   </p>
