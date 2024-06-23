@@ -19,6 +19,36 @@ const { data: images, error: imagesError } = await supabase
 ---
 
 <Layout>
+  <style>
+    .fade-in {
+      animation: fadeIn 0.2s forwards;
+      transition-timing-function: ease-in-out;
+    }
+
+    .fade-out {
+      animation: fadeOut 0.2s forwards;
+      transition-timing-function: ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+
   <section class="relative text-center">
     {
       banner && banner.length > 0 ? (
@@ -69,6 +99,7 @@ const { data: images, error: imagesError } = await supabase
       <p id="modal-alt" class="mt-4 text-white"></p>
     </div>
   </div>
+
   <script is:inline>
     var images = document.querySelectorAll(".container img");
 
@@ -85,12 +116,18 @@ const { data: images, error: imagesError } = await supabase
 
     function showModal(src, alt) {
       modal.classList.remove("hidden");
+      modal.classList.remove("fade-out");
+      modal.classList.add("fade-in");
       modalImg.src = src;
       modalAlt.textContent = formatAltText(alt);
     }
 
     function closeModal() {
-      modal.classList.add("hidden");
+      modal.classList.remove("fade-in");
+      modal.classList.add("fade-out");
+      setTimeout(() => {
+        modal.classList.add("hidden");
+      }, 200); // Match the duration of the fade-out animation
     }
 
     function formatAltText(alt) {
