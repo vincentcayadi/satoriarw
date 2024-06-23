@@ -1,5 +1,4 @@
 ---
-import { Separator } from "@/components/ui/separator";
 import { Instagram, Coffee, GitHub } from "react-feather";
 ---
 
@@ -11,11 +10,10 @@ import { Instagram, Coffee, GitHub } from "react-feather";
       ©{new Date().getFullYear()} satori.arw
     </div>
     <div
-      class="flex items-center h-5 text-sm space-x-4 text-muted-foreground md:text-base"
+      class="flex items-center h-5 text-sm text-muted-foreground md:text-base divide-x"
     >
-      <div>Terms</div>
-      <Separator orientation="vertical" />
-      <div>Privacy Policy</div>
+      <div class="px-4">Terms</div>
+      <div class="px-4">Privacy Policy</div>
     </div>
   </div>
   <div class="flex justify-start space-x-4">
