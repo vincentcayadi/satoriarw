@@ -2,6 +2,7 @@
 import { supabase } from "../db/supabase";
 import Layout from "@/layouts/Layout.astro";
 import { Skeleton } from "@/components/ui/skeleton.tsx";
+import { Image } from "astro:assets";
 
 // Fetch the banner image
 const { data: banner, error: bannerError } = await supabase
@@ -52,9 +53,11 @@ const { data: images, error: imagesError } = await supabase
   <section class="relative text-center">
     {
       banner && banner.length > 0 ? (
-        <img
+        <Image
           src={banner[0].url}
           alt={banner[0].alt_text}
+          height={1350}
+          width={3000}
           class="object-cover bg-fixed"
         />
       ) : (
@@ -69,11 +72,16 @@ const { data: images, error: imagesError } = await supabase
       </h1>
     </div>
   </section>
-  <section class="container my-12 modal columns-2xs">
+  <section class="container mx-auto my-8 columns-3xs">
     {
       images?.map((image) => (
         <div class="p-2 mx-2 mb-6 duration-300 ease-in-out bg-primary-foreground md:hover:scale-105">
-          <img src={image.url} alt={image.alt} class="h-auto aspect-auto" />
+          <img
+            src={image.url}
+            alt={image.alt}
+            loading="lazy"
+            class="h-auto aspect-auto"
+          />
         </div>
       ))
     }

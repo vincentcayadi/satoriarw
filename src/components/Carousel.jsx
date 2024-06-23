@@ -9,9 +9,9 @@ export default function Carousel({ children: slides }) {
     setCurrentSlide((i) => (i === slides.length - 1 ? 0 : i + 1));
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((i) => (i === 0 ? slides.length - 1 : i - 1));
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide((i) => (i === 0 ? slides.length - 1 : i - 1));
+  // };
 
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, autoSlideInterval);
@@ -19,7 +19,7 @@ export default function Carousel({ children: slides }) {
   }, []);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden max-w-[2000px] max-h-[1125px]">
       <div
         className="flex transition-transform duration-1000 ease-in-out"
         style={{
@@ -28,7 +28,7 @@ export default function Carousel({ children: slides }) {
       >
         {slides}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between px-4 md:px-8">
+      {/* <div className="absolute inset-0 flex items-center justify-between px-4 md:px-8">
         <button
           onClick={prevSlide}
           className="z-40"
@@ -39,7 +39,7 @@ export default function Carousel({ children: slides }) {
         <button onClick={nextSlide} className="z-40" aria-label="Next Slide">
           <ArrowRightCircle className="w-4 h-4 duration-200 md:w-10 md:h-10 hover:scale-110 stroke-neutral-200/80" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
