@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowLeftCircle, ArrowRightCircle } from "react-feather";
+// import { ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 
 export default function Carousel({ children: slides }) {
   const autoSlideInterval = 5000;

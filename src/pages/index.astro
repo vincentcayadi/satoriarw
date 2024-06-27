@@ -1,14 +1,14 @@
 ---
 import { supabase } from "../db/supabase";
 import Layout from "../layouts/Layout.astro";
-import Carousel from "@/components/Carousel.jsx";
+// import Carousel from "@/components/Carousel.jsx";
 import { Skeleton } from "@/components/ui/skeleton.tsx";
 
-// Fetch images from the 'carousel' folder
-const { data: slides } = await supabase
-  .from("images")
-  .select("*")
-  .eq("folder", "carousel");
+// // Fetch images from the 'carousel' folder
+// const { data: slides } = await supabase
+//   .from("images")
+//   .select("*")
+//   .eq("folder", "carousel");
 
 const { data: banner } = await supabase
   .from("images")
@@ -45,7 +45,7 @@ import { ArrowRight } from "react-feather";
       </div>
     </section> -->
     <section
-      class="container my-12 grid grid-col-reverse md:grid-cols-2 md:py-32 place-items-center"
+      class="container grid my-12 grid-col-reverse md:grid-cols-2 md:py-32 place-items-center"
     >
       <div>
         <h1 class="inline-block text-3xl font-bold text-leff md:text-5xl">
