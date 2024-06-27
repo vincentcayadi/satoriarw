@@ -16,16 +16,45 @@ import { Skeleton } from "@/components/ui/skeleton.tsx";
 ---
 
 <Layout>
+  <style>
+    .fade-in {
+      animation: fadeIn 0.2s forwards;
+      transition-timing-function: ease-in-out;
+    }
+
+    .fade-out {
+      animation: fadeOut 0.2s forwards;
+      transition-timing-function: ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
   <section class="relative text-center">
     {
       banner && banner.length > 0 ? (
         <img
           src={banner[0].url}
           alt={banner[0].alt_text}
-          class="bg-fixed aspect-[3/1] object-cover"
+          class="bg-fixed aspect-[10/5] object-cover"
         />
       ) : (
-        <Skeleton className="aspect-[3/1]" />
+        <Skeleton className="aspect-[10/5]" />
       )
     }
     <div class="absolute top-0 left-0 w-full h-full bg-secondary/30">
@@ -37,4 +66,64 @@ import { Skeleton } from "@/components/ui/skeleton.tsx";
       </h1>
     </div>
   </section>
+  <div
+    id="modal"
+    class="fixed top-0 left-0 flex items-center justify-center hidden w-screen h-screen z-80 bg-black/70"
+  >
+    <a
+      class="fixed text-5xl font-bold text-white z-90 top-6 right-8"
+      href="javascript:void(0)"
+      onclick="closeModal()"
+    >
+      ×
+    </a>
+
+    <div class="flex flex-col items-center">
+      <img
+        id="modal-img"
+        class="object-cover max-w-full max-h-[80vh] p-2 bg-primary-foreground"
+      />
+      <p id="modal-alt" class="mt-4 text-white"></p>
+    </div>
+  </div>
+
+  <script is:inline>
+    var images = document.querySelectorAll(".container img");
+
+    images.forEach(function (img) {
+      img.addEventListener("click", function () {
+        showModal(img.src, img.alt);
+      });
+    });
+
+    var modal = document.getElementById("modal");
+
+    var modalImg = document.getElementById("modal-img");
+    var modalAlt = document.getElementById("modal-alt");
+
+    function showModal(src, alt) {
+      modal.classList.remove("hidden");
+      modal.classList.remove("fade-out");
+      modal.classList.add("fade-in");
+      modalImg.src = src;
+      modalAlt.textContent = formatAltText(alt);
+    }
+
+    function closeModal() {
+      modal.classList.remove("fade-in");
+      modal.classList.add("fade-out");
+      setTimeout(() => {
+        modal.classList.add("hidden");
+      }, 200); // Match the duration of the fade-out animation
+    }
+
+    function formatAltText(alt) {
+      return alt
+        .split("_")
+        .map(
+          (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        )
+        .join(" ");
+    }
+  </script>
 </Layout>

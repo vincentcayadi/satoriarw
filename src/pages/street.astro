@@ -58,7 +58,7 @@ const { data: images, error: imagesError } = await supabase
           alt={banner[0].alt_text}
           height={1350}
           width={3000}
-          class="object-cover bg-fixed"
+          class="bg-fixed aspect-[10/5] object-cover"
         />
       ) : (
         <Skeleton className="aspect-[10/5]" />
