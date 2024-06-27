@@ -66,6 +66,20 @@ import { Skeleton } from "@/components/ui/skeleton.tsx";
       </h1>
     </div>
   </section>
+  <section class="container mx-auto my-8 columns-3xs">
+    {
+      images?.map((image) => (
+        <div class="p-2 mx-2 mb-6 duration-300 ease-in-out bg-primary-foreground md:hover:scale-105">
+          <img
+            src={image.url}
+            alt={image.alt}
+            loading="lazy"
+            class="h-auto aspect-auto"
+          />
+        </div>
+      ))
+    }
+  </section>
   <div
     id="modal"
     class="fixed top-0 left-0 flex items-center justify-center hidden w-screen h-screen z-80 bg-black/70"
