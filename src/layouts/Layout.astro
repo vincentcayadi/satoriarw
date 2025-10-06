@@ -1,6 +1,7 @@
 ---
 import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar.astro";
+import LenisWrapper from "@/components/LenisWrapper.tsx";
 import "@/styles/globals.css";
 import { ClientRouter } from "astro:transitions";
 import { defaultMeta } from "@/data/socials.ts";
@@ -90,6 +91,7 @@ const finalTitle = title || getDefaultTitle();
   </head>
   <Navbar />
   <body>
+    <LenisWrapper client:load />
     <slot />
   </body>
   <Footer />
