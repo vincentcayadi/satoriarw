@@ -2,7 +2,7 @@
 import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar.astro";
 import "@/styles/globals.css";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import { defaultMeta } from "@/data/socials.ts";
 
 interface Props {
@@ -86,7 +86,7 @@ const finalTitle = title || getDefaultTitle();
     <!-- Generator Meta Tag -->
     <meta name="generator" content={Astro.generator} />
     <title>{finalTitle} | satori.arw</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <Navbar />
   <body>
